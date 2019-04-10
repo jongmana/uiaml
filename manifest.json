@@ -1,0 +1,6 @@
+{
+  "name": "uiaml-tool",
+  "short_name": "uiaml-tool",
+  "start_url": "/",
+  "display": "standalone"
+}
