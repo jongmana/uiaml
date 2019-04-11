@@ -7,5 +7,5 @@ In this version the src directory will already contain a directory structure for
 
 Currently U*ia*ML destingishes between the following diagrams:
 
-[SiteMap Diagram (SMD)](src/smd/README.md)
-Contentarea Diagram
+* [SiteMap Diagram (SMD)](src/smd/README.md)
+* [Contentarea Diagram (CAD)](src/cad/README.md)
