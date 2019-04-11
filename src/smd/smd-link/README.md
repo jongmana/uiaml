@@ -13,8 +13,7 @@
 ## Documentation Properties
 | Property | Type | Descriptionn|
 |:----------:|:------:|-------------|
-| Link Id | U*ia*ML path | Only required in case the trigger property will be described as well.
-The Link Id part of the U*ia*ML path has to be identical to the one used by the Symbol Property. |
+| Link Id | U*ia*ML path | Only required in case the trigger property will be described as well. <br>The Link Id part of the U*ia*ML path has to be identical to the one used by the Symbol Property. |
 | Trigger | String | In case the link is an event link, a description of what triggers the event is required. |
 
 ## Explanation
