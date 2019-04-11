@@ -23,7 +23,7 @@ The decision description must result in the deterministic choice of exactly one 
 By specifying the decision bases one can verify that the information needed to make the decision indeed is available within the system. Specifying the decision bases is also an important way of communicating the design with developers.
 
 In the properties to be documented a difference is made between internal and external decision bases.<br>
-An internal decision base is a Contentarea Element (CAE), like a Text Input or a Selection List, specified by a Contentarea Diagram (CAD) that is part of the site that is modelled. 
+An internal decision base is a Contentarea Element (CAE), like a [Text Input](../../cad-text-input/README.md) or a [Selection List](../../cad/cad-list/README.md), specified by a Contentarea Diagram (CAD) that is part of the site that is modelled. 
 The CAE is to be referred by U*ia*ML path that uniquely identifies the CAE, starting at the SMD sitemap id and separating each level with a dot (‘.’).<br>
 An external decision base is an information source outside of the site to be modelled, like for instance the current time, date or the available disk space. But it can also be the result of an inquiry of an external system based on an internal decision base. For example the balance of a customer that can be retrieved from a Financial System (this is a given system that our site can communicate with), given the customer id as specified by an CAE of the site to be modeled.<br>
 Data stored by the site we model is never to be used as an external decision base within our model. In case we want to use this data as decision base, than we have to find the CAE that was used to accumulate the data we stored and use that CAE as internal decision base.

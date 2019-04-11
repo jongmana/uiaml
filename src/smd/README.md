@@ -10,5 +10,6 @@ The Sitemap Diagram is a core diagram of U*ia*ML, that is used to model a sitema
 * [Page Element](smd-page/README.md)
 * [Popup Element](smd-popup/README.md)
 * [Reference Contentarea Connector Element](smd-reference-contentarea-connector/README.md)
+* [Reference Page Connector Element](smd-reference-page-connector/README.md)
 * [Sitemap Element](smd-sitemap/README.md)
 * [Terminator Element](smd-terminator/README.md)
