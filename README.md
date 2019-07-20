@@ -1,11 +1,6 @@
-# U*ia*ML-tool
+# U*ia*ML
 
-This tool is meant to offer a web based U*ia*ML editor.
-The editor is meant to be build using polymer 3.
+Currently U*ia*ML destingishes between the following core diagrams:
 
-In this version the src directory will already contain a directory structure for the components to be build, and a specification of the U*ia*ML element.
-
-Currently U*ia*ML destingishes between the following diagrams:
-
-* [SiteMap Diagram (SMD)](src/smd/README.md)
-* [Contentarea Diagram (CAD)](src/cad/README.md)
+* [SiteMap Diagram (SMD)](specification/core/smd/README.md)
+* [Contentarea Diagram (CAD)](specification/core/cad/README.md)
