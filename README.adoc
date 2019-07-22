@@ -8,4 +8,4 @@ Currently U__ia__ML destingishes between the following core diagrams:
 In addition to the core diagrams there are also extensions, that can be applied.
 Currently the following extensions are defined:
 
-* link:extension/content-specification/README.adoc[Content Specification]
+* link:specification/extension/content-specification/README.adoc[Content Specification]
