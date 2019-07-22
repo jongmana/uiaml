@@ -28,7 +28,7 @@ image:cad-list.png[cad list]
 Explanation which CAE of the List Container will trigger the recursion.
 |===
 
-## Explanation
+== Explanation
 All Contentarea Elements (CAE) within the List container represent a single list entry. This means that the List Container must hold at least one CAE.
 
 The List elements symbol represents a list of these list entries.

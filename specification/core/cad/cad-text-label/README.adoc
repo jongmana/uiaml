@@ -21,5 +21,5 @@ image:cad-text-label.png[cad text label]
 | Intended Content | String | Description of the text (but not the actual text itself) that is represented by this text label.
 |===
 
-## Explanation
+== Explanation
 The Text Label element is a contentarea element (CAE) that represents a text, which can be a single character or a long story. The Text Label container can hold other CAE's. Placing CAE's into the container indicates that the CAE's are meant to be grouped.
