@@ -7,16 +7,16 @@ image:smd-reference-page-connector.png[smd reference page connector]
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Ref Page Id | String | Name of the page that is the target of this reference. |
+| Property | Type | Description
+| Ref Page Id | String | Name of the page that is the target of this reference.
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| - | - | - |
+| Property | Type | Description
+| - | - | -
 |===
 
 == Explanation

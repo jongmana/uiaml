@@ -7,18 +7,18 @@ image:smd-popup.png[smd-popup]
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Ref Sitemap Id | String | Refers to the sitemap that represents the popup. This property must correspond with a link:../smd-sitemap/README.adoc[Sitemap Id] within the same project. |
-| Ref Page Id | String | Name of the link:../smd-page/README.adoc[Page Id] to be shown. The Page ID must correspond with a link:../smd-page/README.adoc[Page Id] of the link:../smd-sitemap/README.adoc[Ref Sitemap Id]. |
-| Mandatory | Shadow | Indicates whether or not the referred sitemap will hold the focus until it is closed (indicated by a dark shadow) or that the user can still navigate within the sitemap that triggered the popup, even when the popup hasn’t been closed yet (indicated by a white shadow). |
+| Property | Type | Description
+| Ref Sitemap Id | String | Refers to the sitemap that represents the popup. This property must correspond with a link:../smd-sitemap/README.adoc[Sitemap Id] within the same project.
+| Ref Page Id | String | Name of the link:../smd-page/README.adoc[Page Id] to be shown. The Page ID must correspond with a link:../smd-page/README.adoc[Page Id] of the link:../smd-sitemap/README.adoc[Ref Sitemap Id].
+| Mandatory | Shadow | Indicates whether or not the referred sitemap will hold the focus until it is closed (indicated by a dark shadow) or that the user can still navigate within the sitemap that triggered the popup, even when the popup hasn’t been closed yet (indicated by a white shadow).
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| - | - | - |
+| Property | Type | Description
+| - | - | - 
 |===
 
 == Explanation

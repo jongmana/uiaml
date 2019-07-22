@@ -8,16 +8,16 @@ image:smd-reference-contentarea-connector.png[smd reference contentarea connecto
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Ref Contentarea Id | String | Name of the contentarea that is the source of this reference. |
+| Property | Type | Description
+| Ref Contentarea Id | String | Name of the contentarea that is the source of this reference.
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| - | - | - |
+| Property | Type | Description
+| - | - | -
 |===
 
 == Explanation

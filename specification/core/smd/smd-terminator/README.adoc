@@ -8,16 +8,16 @@ image:smd-terminator.png[smd terminator]
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| - | - | - |
+| Property | Type | Description
+| - | - | -
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| - | - | - |
+| Property | Type | Description
+| - | - | -
 |===
 
 == Explanation

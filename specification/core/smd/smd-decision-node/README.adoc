@@ -8,19 +8,19 @@ image::smd-decision-node.png[smd decision node]
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Decision Node Id | String | String that uniquely identifies the decision node within a single sitemap. |
+| Property | Type | Description
+| Decision Node Id | String | String that uniquely identifies the decision node within a single sitemap.
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Decision Node Id | U__ia__ML path | The Decision Node Id part of the U__ia__ML path has to be identical to the one used by the Symbol Property. |
-| Decision description | String | Textual explanation of the choice and where the decision about which outgoing link to be followed will be based on. |
-| Internal Decision base | Array of U__ia__ML paths | List of Contentarea Elements (CAE) that serve as input for the decision to be made. |
-| External Decision base | Array of Strings | List of external factors that are required to make the decision at hand. |
+| Property | Type | Description
+| Decision Node Id | U__ia__ML path | The Decision Node Id part of the U__ia__ML path has to be identical to the one used by the Symbol Property.
+| Decision description | String | Textual explanation of the choice and where the decision about which outgoing link to be followed will be based on.
+| Internal Decision base | Array of U__ia__ML paths | List of Contentarea Elements (CAE) that serve as input for the decision to be made.
+| External Decision base | Array of Strings | List of external factors that are required to make the decision at hand.
 |===
 
 == Explanation

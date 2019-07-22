@@ -8,16 +8,16 @@ image:smd-sitemap.png[smd sitemap]
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Sitemap Id | String | Unique id for each sitemap within a single project. |
+| Property | Type | Description
+| Sitemap Id | String | Unique id for each sitemap within a single project.
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| - | - | - |
+| Property | Type | Description
+| - | - | -
 |===
 
 == Explanation

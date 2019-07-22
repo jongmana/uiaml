@@ -7,19 +7,19 @@ image:smd-page.png[smd page]
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Page Id | String | Must be an unique identifier to differentiate all pages within a single sitemap. |
-| Startpage | Line width | Each project should have at least one start page that will be shown on starting the application e.g. opening the site. In U__ia__ML a start page is indicated by a bold frame. |
+| Property | Type | Description
+| Page Id | String | Must be an unique identifier to differentiate all pages within a single sitemap.
+| Startpage | Line width | Each project should have at least one start page that will be shown on starting the application e.g. opening the site. In U__ia__ML a start page is indicated by a bold frame.
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Page Id | U__ia__ML path | The Page ID part of the U__ia__ML path has to be identical to the one used by the Symbol Property. |
-| Startpage | Boolean | True in case the page will be the standard page to be shown on starting the application / opening the site. |
-| Landingpage | Boolean | A Landing Page is not the default starting page, but it is a starting page the user derives by either a special URL (in case of a web site) or some parameters given with the startup. |
+| Property | Type | Description
+| Page Id | U__ia__ML path | The Page ID part of the U__ia__ML path has to be identical to the one used by the Symbol Property.
+| Startpage | Boolean | True in case the page will be the standard page to be shown on starting the application / opening the site.
+| Landingpage | Boolean | A Landing Page is not the default starting page, but it is a starting page the user derives by either a special URL (in case of a web site) or some parameters given with the startup.
 |===
 
 == Explanation

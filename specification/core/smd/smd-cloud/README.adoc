@@ -7,17 +7,17 @@ image::smd-cloud.png[sdm cloud]
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| Cloud Container Id | String | optional id to identify the cloud and its expected content |
-| URI | String | In case that cloud represents a static URI of an external site, the URI can be given within the symbol. |
+| Property | Type | Description
+| Cloud Container Id | String | optional id to identify the cloud and its expected content
+| URI | String | In case that cloud represents a static URI of an external site, the URI can be given within the symbol.
 |===
 
 == Documentation Properties
 
 [options=header]
 |===
-| Property | Type | Descriptionn|
-| - | - | - |
+| Property | Type | Description
+| - | - | - 
 |===
 
 == Explanation
