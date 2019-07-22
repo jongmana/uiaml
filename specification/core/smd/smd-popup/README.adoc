@@ -22,6 +22,6 @@ image:smd-popup.png[smd-popup]
 |===
 
 == Explanation
-The popup symbol represents that another application window. The popup may only be invoked by an link:../smd-associative-link/README.adoc[associative link] and has to be drawn outside of the invoking link:../smd-sitemap/README.adoc[sitemap symbol]. 
+The popup symbol represents that another application window. The popup may only be invoked by an link:../smd-associated-link/README.adoc[associative link] and has to be drawn outside of the invoking link:../smd-sitemap/README.adoc[sitemap symbol]. 
 A sitemap may hold several popups with the same Ref Sitemap Id. Several popups with the same Ref Sitemap Id also refer to the same physical application window.
 Opening a popup with the same Ref Sitemap Id than an already opened popup should not open another popup, but should replace the content of the already open popup window with the content of the newly opened popup.
