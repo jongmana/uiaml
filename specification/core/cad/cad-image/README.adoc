@@ -22,5 +22,5 @@ image:cad-image.png[cad image]
 | Intended Content | String | Description of what the image is intended to show.
 |===
 
-## Explanation
+== Explanation
 The Image element is a contentarea element (CAE) that represents a image. The image container can hold other CAE's. Placing CAE's into the container indicates that the CAE's are meant to be grouped together.
