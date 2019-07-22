@@ -25,7 +25,7 @@ image::smd-decision-node.png[smd decision node]
 
 == Explanation
 
-The decision element enables us to model dynamic site navigation. It requires exactly one incoming link:../smd-link.README.adoc[link] and has two or more outgoing link:../smd-link/README.adoc[links]. Due to the fact that outgoing links aren't triggered by the user themselves the link types of outgoing links is that of an event link.
+The decision element enables us to model dynamic site navigation. It requires exactly one incoming link:../smd-link/README.adoc[link] and has two or more outgoing link:../smd-link/README.adoc[links]. Due to the fact that outgoing links aren't triggered by the user themselves the link types of outgoing links is that of an event link.
 
 The decision description must result in the deterministic choice of exactly one outgoing link to be followed. The choice has to be based on information listed by the internal and external decision bases property.
 
