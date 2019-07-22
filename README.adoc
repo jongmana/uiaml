@@ -9,3 +9,4 @@ In addition to the core diagrams there are also extensions, that can be applied.
 Currently the following extensions are defined:
 
 * link:specification/extension/content-specification/README.adoc[Content Specification]
+* link:specification/extension/ux-decisions/README.adoc[UX Decisions]

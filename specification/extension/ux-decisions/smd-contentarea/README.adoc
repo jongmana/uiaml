@@ -1,0 +1,17 @@
+= Contentarea - UX decisions extension
+
+== Symbol
+
+== Symbol Properties
+
+== Documentation Properties
+
+[options=header]
+|===
+| Property | Type | Description
+| contentpriority for persona [x] | Number | contentpriority for persona [x]
+| argumentation for persona [x] | String | give an explaination of the reasoning behind the contentpriority decision for the persona [x]
+|===
+
+== Explanation
+This extension only extens the documentation part of the Sitemap Diagram Element link:../../../core/smd/smd-contentarea/README.adoc[Contentarea]. 
