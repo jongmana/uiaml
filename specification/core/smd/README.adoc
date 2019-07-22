@@ -1,0 +1,15 @@
+= SiteMap Diagram (SMD)
+
+The Sitemap Diagram is a core diagram of U__ia__ML, that is used to model a sitemap using the following sitemap elements (SME).
+
+* link:smd-associated-link/README.adoc[Associated Link Element]
+* link:smd-cloud/README.adoc[Cloud Element]
+* link:smd-contentarea/README.adoc[Contentarea Element]
+* link:smd-decision-node/README.adoc[Decision Node Element]
+* link:smd-link/README.adoc[Link Element]
+* link:smd-page/README.adoc[Page Element]
+* link:smd-popup/README.adoc[Popup Element]
+* link:smd-reference-contentarea-connector/README.adoc[Reference Contentarea Connector Element]
+* link:smd-reference-page-connector/README.adoc[Reference Page Connector Element]
+* link:smd-sitemap/README.adoc[Sitemap Element]
+* link:smd-terminator/README.adoc[Terminator Element]
