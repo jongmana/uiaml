@@ -1,5 +1,10 @@
 = U__ia__ML
 
+[frame=none, grid=none]
+|===
+|The **U**niversal __**i**nformation **a**rchitecture__ **M**odeling **L**anguage (U__ia__ML) should help to model and document application front ends. a| image:images/Logo_UiaML.jpg[UiaML logo, 200] 
+|===
+
 Currently U__ia__ML destingishes between the following core diagrams:
 
 * link:specification/core/smd/README.adoc[SiteMap Diagram (SMD)]
