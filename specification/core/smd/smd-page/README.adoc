@@ -1,0 +1,27 @@
+= Page
+
+== Symbol
+image:smd-page.png[smd page]
+
+== Symbol Properties
+
+[options=header]
+|===
+| Property | Type | Descriptionn|
+| Page Id | String | Must be an unique identifier to differentiate all pages within a single sitemap. |
+| Startpage | Line width | Each project should have at least one start page that will be shown on starting the application e.g. opening the site. In U__ia__ML a start page is indicated by a bold frame. |
+|===
+
+== Documentation Properties
+
+[options=header]
+|===
+| Property | Type | Descriptionn|
+| Page Id | U__ia__ML path | The Page ID part of the U__ia__ML path has to be identical to the one used by the Symbol Property. |
+| Startpage | Boolean | True in case the page will be the standard page to be shown on starting the application / opening the site. |
+| Landingpage | Boolean | A Landing Page is not the default starting page, but it is a starting page the user derives by either a special URL (in case of a web site) or some parameters given with the startup. |
+|===
+
+== Explanation
+A Page is the container of a number of contentareas (see: link:../smd-contentarea/README.adoc[SMD - Contentarea Element] ). The page container can hold any number of content areas.
+A Page is not a physical representation of a file, like default.html or artikel.php. In U__ia__ML a Page represents what the user experience as a page.
