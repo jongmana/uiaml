@@ -1,0 +1,9 @@
+= Extension: Content Specification
+
+The Content Specification Extension offers a way to extend some of the core Content Area Elements (CAE) of the link:../../core/cad/README.adoc[Content Area Diagram (CAD)].
+
+The CAE supported are:
+
+* link:cad-image/README.adpc[Image Element]
+* link:cad-text-input/README.adoc[Text Input Element]
+* link:cad-text-label/README.adoc[Text Label Element]
