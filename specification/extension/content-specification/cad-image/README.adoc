@@ -31,4 +31,4 @@ Otherwise it's static.
 |===
 
 == Explanation
-This content extension only extens the documentation part of the Content Area Element link:../../../core/cad/cad-image/README.adoc[Image]. 
+This content extension only expands the documentation part of the Content Area Element link:../../../core/cad/cad-image/README.adoc[Image]. 

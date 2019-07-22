@@ -43,4 +43,4 @@ NOTE: only one of those two properties should be used for a given language.
 
 
 == Explanation
-This content extension only extens the documentation part of the Content Area Element link:../../../core/cad/cad-text-label/README.adoc[Text Label]. 
+This content extension only expands the documentation part of the Content Area Element link:../../../core/cad/cad-text-label/README.adoc[Text Label]. 

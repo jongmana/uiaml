@@ -21,5 +21,5 @@ image:smd-reference-page-connector.png[smd reference page connector]
 
 == Explanation
 
-The Reference Page Connector is only meant to be used in combination with the link:../smd-reference-contentarea-connector/README.adoc[Reference Contentarea Connector]. The Reference Page Connector is part of a toolset to maintain the overview of models of a larger link:../smd-sitemap/README.adoc[sitemap].
-Using the Reference Connector toolset, a single link:../smd-sitemap/README.adoc[sitemap diagram] can split up into several sitemap diagrams.
+The Reference Page Connector is only meant to be used in combination with the link:../smd-reference-contentarea-connector/README.adoc[Reference Contentarea Connector]. The Reference Page Connector is part of a toolbox to maintain the overview of models of a larger link:../smd-sitemap/README.adoc[sitemap].
+Using the Reference Connector toolbox, a single link:../smd-sitemap/README.adoc[sitemap diagram] can split up into several sitemap diagrams.

@@ -17,7 +17,7 @@ image::smd-contentarea.png[smd contentarea]
 |===
 | Property | Type | Description
 | Contentarea Id | U__ia__ML path | The Contentarea Id part of the U__ia__ML path has to be identical to the one used by the Symbol property.
-| Description | String | Text that describes the information that will be represenated by this contentarea.
+| Description | String | Text that describes the information that will be represented by this contentarea.
 |===
 
 == Explanation
