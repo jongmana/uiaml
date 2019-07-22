@@ -4,6 +4,6 @@ The Content Specification Extension offers a way to extend some of the core Cont
 
 The CAE supported are:
 
-* link:cad-image/README.adpc[Image Element]
+* link:cad-image/README.adoc[Image Element]
 * link:cad-text-input/README.adoc[Text Input Element]
 * link:cad-text-label/README.adoc[Text Label Element]
