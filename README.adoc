@@ -1,0 +1,6 @@
+= U__ia__ML
+
+Currently U__ia__ML destingishes between the following core diagrams:
+
+* link:specification/core/smd/README.adoc[SiteMap Diagram (SMD)]
+* link:specification/core/cad/README.adoc[Contentarea Diagram (CAD)]
