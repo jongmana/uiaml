@@ -9,7 +9,8 @@ image::smd-link.png[smd link]
 |===
 | Property | Type | Description
 | Link type | "L" \| "E" | Whether the link is triggered by a __“click”__ from the user (in this case the indication “L” is optional) or by an event (“E”).
-| Link Id | String | A string that uniquely identifies the link in perspective of the contentarea the link originates from.
+| Link Id | [device indicator - ] String | The device indicator part is optional and can be a string or a symbol followed by a dash to seperate the device indicator from the string. The device indicator specifies for which devices this link is valid (for instance smartphone, tablet or desktop).
+Together with the string part the Link Id uniquely identifies the link in perspective of the contentarea the link originates from.
 | { actors } | List of Strings | Optional property that defines which actor has the right to trigger this link.
 | [guard] | Boolean expression based on keys | Optional property that can be used to determine whether the link is enabled or disabled based on keys given by the internal and/or external decision base. 
 |===
