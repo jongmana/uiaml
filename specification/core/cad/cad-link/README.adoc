@@ -10,7 +10,9 @@ image:cad-link.png[cad link]
 |===
 | Property | Type | Description
 | Link type | "L" \|"E" | Whether the link is triggered by a __“click”__ from the user (in this case the indication “L” is optional) or by an event (“E”).
-| Link Id | String | A string that corresponds to the link:../../smd/smd-link/README.adoc[Link Id] of the outgoing links of this contentarea as modelled within the Sitemap Diagram (SMD).
+| Link Id | [device indicator - ] String | This part must correspond to the link:../../smd/smd-link/README.adoc[Link Id] of the outgoing links of this contentarea as modelled within the Sitemap Diagram (SMD).
+| { actors } | List of Strings | This part must correspond to the link:../../smd/smd-link/README.adoc[actors] property of the outgoing links of this contentarea as modelled within the Sitemap Diagram (SMD).
+| [guard] | Boolean expression based on keys | This part must correspond to the link:../../smd/smd-link/README.adoc[guard] property of the outgoing links of this contentarea as modelled within the Sitemap Diagram (SMD).
 |===
 
 == Documentation Properties
