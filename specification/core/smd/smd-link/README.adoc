@@ -1,3 +1,11 @@
+:icons: font 
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 = Link
 
 == Symbol
@@ -12,6 +20,7 @@ image::smd-link.png[smd link]
 | Link Id | [device indicator - ] String | The device indicator part is optional and can be a string or a symbol followed by a dash to seperate the device indicator from the string. The device indicator specifies for which devices this link is valid (for instance smartphone, tablet or desktop).
 Together with the string part the Link Id uniquely identifies the link in perspective of the contentarea the link originates from.
 | { actors } | List of Strings | Optional property that defines which actor has the right to trigger this link.
+NOTE: In case the link:../smd-sitemap/README.adoc[sitemap] contains an actor indication all links within that sitemap inherit the actors from the sitemap property even if the actors are not listed at this link property.
 | [guard] | Boolean expression based on keys | Optional property that can be used to determine whether the link is enabled or disabled based on keys given by the internal and/or external decision base. 
 |===
 
