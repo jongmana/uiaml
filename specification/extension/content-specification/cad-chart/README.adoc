@@ -1,0 +1,21 @@
+= Chart - content extension
+
+== Symbol
+
+== Symbol Properties
+
+
+== Documentation Properties
+
+[options=header]
+.chart content extension
+[options=header]
+|===
+| Property | Type | Description
+| type | String | The type of the chart, for instance line-chart, bar-chart, ...
+| internal parameter | Array of U__ia__ML paths | List of Contentarea Elements (CAE) that serve as input for the chart to be generated.
+| external parameter | Array of Strings | List of external data source locations that are required to the generate the chart.
+|===
+
+== Explanation
+This content extension only extends the documentation part of the Content Area Element link:../../../core/cad/cad-chart/README.adoc[Chart]. 
