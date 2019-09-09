@@ -1,0 +1,85 @@
+= The Drop Shop - Version 1
+A very simple site
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+== The Strategy layer
+Because we want to focus this tutorial on U__ia__ML we will not go very deep into how we approached this layer and the deliverables of this layer will be very summier.
+
+=== Business Case
+The site to be build should provide some basic information for customers so that visitors of the site know what the shop is about, where to find it and when the shop is open for business. The shop owner also wants to distingish himself from other sweets shop by showing that this shop really knows it's products.
+
+=== Personas
+The typical visitors of the shop and properly visitors of the site can be destingished between:
+
+* **Ilse**: A child of 11 years old who really likes all kinds of sweets especially when they are colorful.
+* **Jaap**: A business man who often travels and always wants to have some 'drop' with him. He always is interested in new kinds of 'drop' and the story behind it.
+
+== The Scope layer
+Because the site should be very basic the site will be static and will not provide any interactivity.
+Therefore there are no UML Use Cases can be defined.
+But from the Business Case we can extract some User Stories:
+
+. As a customer I want to know where the shop is located and how it looks in order to determine if I want to travel to it.
+. As a customer I want to know when the shop is open
+. As a customer I want to see what kinds of sweets the shop provides.
+. As the business owner I want to distingish the shop from other sweets sellers by showing that the shop really is specialized in sweets and can provide information normally not available at other stores.
+
+== The Structure layer
+We will now use the U__ia__ML Sitemap Diagram (SMD) to provide the sitemap deliverable of the structure layer.
+
+We start this process of defining the SMD model by first determine the contentareas we want to use and their documentation.
+
+image::./version1-structure1.png[The contentarea]
+
+[options=header]
+|===
+| Contentarea ID | Description
+| Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
+This contentarea therefore fullfills the requirements of the first and second user story.
+| Liquorice-Information | A story combined with some images about the liquorice plant and the history of sweets in general.
+This content area will be be the realization of the forth user story.
+| Assortment | A static overview of some sweets sold at the store (the third user story).
+|===
+
+By also using the extension 'ux-decision' we can determine the content priority for the contentareas.
+[cols="3", options=header]
+|===
+| Contentarea ID | Description | ux-extension
+
+| Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
+This contentarea therefore fullfills the requirements of the first and second user story. | 
+Ilse: priority 8 : She knows the store very well, therefore the location is known to her, but often forgets the opening hours of the store.
+
+Jaap: priority 9 : Based on the impressions of the store he determines whether to buy his sweets at the nearest supermarket or at this specialized store. This information about the location and opening hours is very important to him because he travels often by car and has to determine the route to the shop and if he will make it in time after work before the shop closes. 
+
+| Liquorice-Information | A story combined with some images about the liquorice plant and the history of sweets in general. 
+This content area will be be the realization of the forth user story. |
+Ilse: priority 1 : For her this information is boring, only the image of the liquorice plant might get her attention.
+
+Jaap: priority 5 : For him this information is nice to know and might be useful in a conversation with foreigners who aren't familiar with this dutch treat. It also gives him some insurance that the store knows its sweets.
+| Assortment | A static overview of some sweets sold at the store (the third user story). |
+Ilse: priority 8: She likes to look at the sweats, especially when they are colorful. It gives her ideas of what to buy next.
+
+Jaap: priority 6: It gives him a good impression of what the store has to offer, but he would prefer a more compleet overview and online store.
+|===
+
+From the table we can conclude that the 'Shop-Information' is most important to our personas followed by the 'Assortment' and that the 'Liquorice-Information' is less important. The 'Shop-Information' therefore should be on the first page the site visitors see.
+
+Determining now our pages we decide to go with 3 pages, one for each of our contentareas and that the startpage should be the page containing the 'Shop-Information'. Which are all part of our 'Drop-Shop' Sitemap.
+
+image:./version1-structure2.png[First sitemap]
+
+
+
+
+
+== The Skeleton layer
+
+== The Surface layer
