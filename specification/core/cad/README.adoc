@@ -2,9 +2,10 @@
 
 The ContentArea Diagram is a core diagram of U__ia__ML, that is used to model the content of a contentarea using the following contentarea elements (CAE).
 
+* link:cad-chart/README.adoc[Chart Element]
 * link:cad-contentarea/README.adoc[Contentarea Element]
-* link:cad-image/README.adpc[Image Element]
+* link:cad-image/README.adoc[Image Element]
 * link:cad-link/README.adoc[Link Element]
-* link:cad-list/README.adpc[List Element]
+* link:cad-list/README.adoc[List Element]
 * link:cad-text-input/README.adoc[Text Input Element]
 * link:cad-text-label/README.adoc[Text Label Element]
