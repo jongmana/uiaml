@@ -1,5 +1,4 @@
 = The Drop Shop - Version 1
-A very simple site
 :icons: font
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -8,6 +7,7 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
+In this version a very simple first website for the fictional case "The Drop Shop" will be designed.
 
 == The Strategy layer
 Because we want to focus this tutorial on U__ia__ML we will not go very deep into how we approached this layer and the deliverables of this layer will be very summier.
