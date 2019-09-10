@@ -37,8 +37,10 @@ We will now use the U__ia__ML Sitemap Diagram (SMD) to provide the sitemap deliv
 
 We start this process of defining the SMD model by first determine the contentareas we want to use and their documentation.
 
+.The Contentareas
 image::./version1-structure1.png[The contentarea]
 
+.Contentarea documentation
 [options=header]
 |===
 | Contentarea ID | Description
@@ -50,6 +52,8 @@ This content area will be be the realization of the forth user story.
 |===
 
 By also using the extension 'ux-decision' we can determine the content priority for the contentareas.
+
+.Contentarea documentation with ux-decision extension
 [cols="3", options=header]
 |===
 | Contentarea ID | Description | ux-extension
@@ -75,7 +79,44 @@ From the table we can conclude that the 'Shop-Information' is most important to 
 
 Determining now our pages we decide to go with 3 pages, one for each of our contentareas and that the startpage should be the page containing the 'Shop-Information'. Which are all part of our 'Drop-Shop' Sitemap.
 
-image:./version1-structure2.png[First sitemap]
+.First U__ia__ML sitemap
+image::./version1-structure2.png[First sitemap]
+
+The minimal documentation for this sitemap is given by the following tabel.
+
+.page documentation
+[options=header]
+|===
+| Page ID | Startpage | LandingPage
+| Home-page | yes | no
+| Product-info-page | no | no
+| Assortment-page | no | no
+|===
+
+Since this tabel doesn't add information we already can see in the sitemap image itself we could argu that we can skip this tabel. But since their is currently no U__ia__ML CASE tool available, and these sitemaps are often drawn by hand, we add the tabel to make sure that we don't misinterpret a handdrawn sitemap. +
+Another advantage of having this tabel is that we can extend it with for instance the ex-decision extension.
+
+|===
+| Page ID | Startpage | LandingPage | ux-decision
+| Home-page | yes | no |
+!===
+! Ilse ! Shop-Information - medium ! There is only one contentarea on this page.
+! Jaap ! Shop-Information - medium ! There is only one contentarea on this page.
+!===
+
+| Product-info-page | no | no |
+!===
+! Ilse ! Liquorice-Information - medium ! There is only one contentarea on this page.
+! Jaap ! Liquorice-Information - medium ! There is only one contentarea on this page.
+!===
+
+| Assortment-page | no | no |
+!===
+! Ilse ! Assortment - medium ! There is only one contentarea on this page.
+! Jaap ! Assortment - medium ! There is only one contentarea on this page.
+!===
+|===
+// Add tabel for the pages
 
 // Add links
 // Add menu contentarea
@@ -94,3 +135,6 @@ image:./version1-structure2.png[First sitemap]
 == The Surface layer
 
 // not part of UiaML but we can show that the layout is not determined by the specification.
+
+.Elements of User Experience ( link:https://ux.stackexchange.com/questions/51195/font-size-or-layout-which-to-decide-first[] )
+image::x7VC7.jpg[]
