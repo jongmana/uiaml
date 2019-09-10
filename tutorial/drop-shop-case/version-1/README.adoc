@@ -178,7 +178,12 @@ If we however would have decided to place the 'Shop-Information' and the 'Assort
 .Elements of User Experience ( link:https://ux.stackexchange.com/questions/51195/font-size-or-layout-which-to-decide-first[] )
 image::x7VC7.jpg[]
 
+
+
+
 == Deliverables
+Since this is a tutorial that contains many images and tables you might wonder what remains if you would write a design document.
+In this chapter only the parts from this tutorial that would go into such a design document are extracted.
 
 === Strategy Layer
 
