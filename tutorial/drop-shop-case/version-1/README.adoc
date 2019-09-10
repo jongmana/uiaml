@@ -99,18 +99,21 @@ Another advantage of having this tabel is that we can extend it with for instanc
 |===
 | Page ID | Startpage | LandingPage | ux-decision
 | Home-page | yes | no |
+[cols="3"]
 !===
 ! Ilse ! Shop-Information - medium ! There is only one contentarea on this page.
 ! Jaap ! Shop-Information - medium ! There is only one contentarea on this page.
 !===
 
 | Product-info-page | no | no |
+[cols="3"]
 !===
 ! Ilse ! Liquorice-Information - medium ! There is only one contentarea on this page.
 ! Jaap ! Liquorice-Information - medium ! There is only one contentarea on this page.
 !===
 
 | Assortment-page | no | no |
+[cols="3"]
 !===
 ! Ilse ! Assortment - medium ! There is only one contentarea on this page.
 ! Jaap ! Assortment - medium ! There is only one contentarea on this page.
