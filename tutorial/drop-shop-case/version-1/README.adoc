@@ -77,10 +77,20 @@ Determining now our pages we decide to go with 3 pages, one for each of our cont
 
 image:./version1-structure2.png[First sitemap]
 
-
-
+// Add links
+// Add menu contentarea
 
 
 == The Skeleton layer
 
+// CAD for Menu
+
+// CAD for Shop-Information
+
+// CAD for Liqurice-Information
+
+// CAD for Assortment-page
+
 == The Surface layer
+
+// not part of UiaML but we can show that the layout is not determined by the specification.
