@@ -6,11 +6,13 @@
 
 == Documentation Properties
 
+Append this tabel for each persona
 [options=header]
 |===
 | Property | Type | Description
-| content priority for persona [x] | Number | content priority for persona [x]
-| argumentation for persona [x] | String | give an explanation of the reasoning behind the content priority decision for the persona [x]
+| persona | String | The name of the persona
+| content priority | Number | content priority for the given persona. When not otherwise defined, the default number schema for this property is a number range from 0 (low priority) to 10 (very high priority). 
+| argumentation  | String | give an explanation of the reasoning behind the content priority decision for this persona
 |===
 
 == Explanation

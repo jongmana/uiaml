@@ -15,3 +15,4 @@ The UX Decision Specification Extension helps to record decision taken in the de
 The CAE supported are:
 
 * link:smd-contentarea/README.adoc[SMD Contentarea]
+* link:smd-page/README.adoc[SMD Page]

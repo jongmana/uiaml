@@ -9,7 +9,8 @@ image:smd-page.png[smd page]
 |===
 | Property | Type | Description
 | Page Id | String | Must be an unique identifier to differentiate all pages within a single sitemap.
-| Start page | Line width | Each project should have at least one start page that will be shown on starting the application e.g. opening the site. In U__ia__ML a start page is indicated by a bold frame.
+| Start page | All Lines bold  | Each project should have at exactly one start page that will be shown on starting the application e.g. opening the site. In U__ia__ML a start page is indicated by a bold frame.
+| Landing page | Only container lines are bold | Additional landing pages other than the start page are not required, but in to destinguish them from the other pages their container part should have a bolder line width.
 |===
 
 == Documentation Properties
