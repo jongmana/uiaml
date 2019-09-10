@@ -341,7 +341,30 @@ We can finish the page by adding the elements for the Opening hours and Location
 .The Shop-Information Contentarea
 image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
 
-NOTE: As with the Sitemap Diagram, the layout doesn't matter. A future extension with regard to the layout may adres this, but currently the layout is an aspect we don't model with U__ia__ML.
+NOTE: As with the Sitemap Diagram, the layout doesn't matter. A future extension with regard to the layout may adres this, but currently the layout is an aspect we don't model with U__ia__ML. The grouping however gives some visual layout gidelines, which for instance would be a layout violation if we would place the Outside Impression Image as part of the Location Information.
+
+The last part we have to take care of before we can finish this contentarea is the documentation part of the elements.
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content 
+| Outside Impression | An image that shows the shop from the outside, so that visitors can easily recognize the shop.
+| Inside Impression | An image of the inside of the shop to give the impression that it's a nice clean shop, where the stocks are filled and their is plenty of sweets to choose from.
+| Street Map | A simple street map that has a marker that shows the location of the shop.
+|===
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content 
+| Welcome header | A welcome slogan 
+| Welcome text | A very short text about the shop that explains what this site is about, what the user can find here and why the user should shop here and not somewhere else.
+| Liquorice information | part of the welcome text element that links to the Liquorice-Information-page.
+| Assortment | part of the welcome text element that links to the Assortment-page.
+| Opening hours | A table with the opening hours of the shop.
+| Location information | The adres of the shop as well as information about the nearest public transport stop and about parking.
+|===
 
 === The Liquorice-Information contentarea
 
@@ -485,6 +508,30 @@ image::./version1-skeleton-menu4.png[The final Menu contentarea]
 |===
 
 ==== Shop-Inforamtion Contentarea
+
+.The Shop-Information Contentarea
+image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content 
+| Outside Impression | An image that shows the shop from the outside, so that visitors can easily recognize the shop.
+| Inside Impression | An image of the inside of the shop to give the impression that it's a nice clean shop, where the stocks are filled and their is plenty of sweets to choose from.
+| Street Map | A simple street map that has a marker that shows the location of the shop.
+|===
+
+.text label documentation
+[%autowidth, cols="3*a", options=header]
+|===
+| Text label | Intended content | type
+| Welcome header | A welcome slogan 
+| Welcome text | A very short text about the shop that explains what this site is about, what the user can find here and why the user should shop here and not somewhere else.
+| Liquorice information | part of the welcome text element that links to the Liquorice-Information-page.
+| Assortment | part of the welcome text element that links to the Assortment-page.
+| Opening hours | A table with the opening hours of the shop.
+| Location information | The adres of the shop as well as information about the nearest public transport stop and about parking.
+|===
 
 ==== Liquorice-Information Contentarea
 
