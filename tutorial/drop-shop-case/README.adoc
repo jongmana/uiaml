@@ -19,3 +19,6 @@ In this case the shop owner wants a website to promote his shop. But because it'
 
 link:./version-1/README.adoc[Version 1 - Tutorial]
 
+// Version-2: add dynamically maintain the assortment -> Use cases add, delete and modify sweet -> UiaML forms, rights, landingpage (login for owner)-> reference pages...
+
+// Version-3: add order use case -> popup, assosiated pages (mail)
