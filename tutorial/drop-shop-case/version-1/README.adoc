@@ -41,7 +41,7 @@ We start this process of defining the SMD model by first determine the contentar
 image::./version1-structure1.png[The contentarea]
 
 .Contentarea documentation
-[options=header]
+[%autowidth, options=header]
 |===
 | Contentarea ID | Description
 | Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
@@ -54,25 +54,45 @@ This content area will be be the realization of the forth user story.
 By also using the extension 'ux-decision' we can determine the content priority for the contentareas.
 
 .Contentarea documentation with ux-decision extension
-[cols="3", options=header]
+[%autowidth, cols="3*a", options=header]
 |===
 | Contentarea ID | Description | ux-extension
 
 | Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
 This contentarea therefore fullfills the requirements of the first and second user story. | 
-Ilse: priority 8 : She knows the store very well, therefore the location is known to her, but often forgets the opening hours of the store.
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 8
+! She knows the store very well, therefore the location is known to her, but often forgets the opening hours of the store.
 
-Jaap: priority 9 : Based on the impressions of the store he determines whether to buy his sweets at the nearest supermarket or at this specialized store. This information about the location and opening hours is very important to him because he travels often by car and has to determine the route to the shop and if he will make it in time after work before the shop closes. 
-
+! Jaap
+! priority 9 
+! Based on the impressions of the store he determines whether to buy his sweets at the nearest supermarket or at this specialized store. This information about the location and opening hours is very important to him because he travels often by car and has to determine the route to the shop and if he will make it in time after work before the shop closes. 
+!===
 | Liquorice-Information | A story combined with some images about the liquorice plant and the history of sweets in general. 
 This content area will be be the realization of the forth user story. |
-Ilse: priority 1 : For her this information is boring, only the image of the liquorice plant might get her attention.
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 1 
+! For her this information is boring, only the image of the liquorice plant might get her attention.
 
-Jaap: priority 5 : For him this information is nice to know and might be useful in a conversation with foreigners who aren't familiar with this dutch treat. It also gives him some insurance that the store knows its sweets.
+! Jaap
+! priority 5 
+! For him this information is nice to know and might be useful in a conversation with foreigners who aren't familiar with this dutch treat. It also gives him some insurance that the store knows its sweets.
+!===
 | Assortment | A static overview of some sweets sold at the store (the third user story). |
-Ilse: priority 8: She likes to look at the sweats, especially when they are colorful. It gives her ideas of what to buy next.
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 8
+! She likes to look at the sweats, especially when they are colorful. It gives her ideas of what to buy next.
 
-Jaap: priority 6: It gives him a good impression of what the store has to offer, but he would prefer a more compleet overview and online store.
+! Jaap
+! priority 6
+! It gives him a good impression of what the store has to offer, but he would prefer a more compleet overview and online store.
+!===
 |===
 
 From the table we can conclude that the 'Shop-Information' is most important to our personas followed by the 'Assortment' and that the 'Liquorice-Information' is less important. The 'Shop-Information' therefore should be on the first page the site visitors see.
@@ -96,30 +116,46 @@ The minimal documentation for this sitemap is given by the following tabel.
 Since this tabel doesn't add information we already can see in the sitemap image itself we could argu that we can skip this tabel. But since their is currently no U__ia__ML CASE tool available, and these sitemaps are often drawn by hand, we add the tabel to make sure that we don't misinterpret a handdrawn sitemap. +
 Another advantage of having this tabel is that we can extend it with for instance the ex-decision extension.
 
+.page documentation with ux-decision extension
+[%autowidth, cols="4*a"]
 |===
-| Page ID | Startpage | LandingPage | ux-decision
+| Page ID 
+| Start +
+page 
+| Landing +
+Page 
+| ux-decision
 | Home-page | yes | no |
-[cols="3"]
+[%autowidth, cols="3*"]
 !===
-! Ilse ! Shop-Information - medium ! There is only one contentarea on this page.
-! Jaap ! Shop-Information - medium ! There is only one contentarea on this page.
+! Ilse ! Shop-Information: __medium__ 
+! There is only one contentarea on this page.
+! Jaap ! Shop-Information: __medium__ 
+! There is only one contentarea on this page.
 !===
 
 | Product-info-page | no | no |
-[cols="3"]
+[%autowidth, cols="3*"]
 !===
-! Ilse ! Liquorice-Information - medium ! There is only one contentarea on this page.
-! Jaap ! Liquorice-Information - medium ! There is only one contentarea on this page.
+! Ilse ! Liquorice-Information: __medium__ 
+! There is only one contentarea on this page.
+! Jaap ! Liquorice-Information: __medium__ 
+! There is only one contentarea on this page.
 !===
 
 | Assortment-page | no | no |
-[cols="3"]
+[%autowidth, cols="3*"]
 !===
-! Ilse ! Assortment - medium ! There is only one contentarea on this page.
-! Jaap ! Assortment - medium ! There is only one contentarea on this page.
+! Ilse ! Assortment: __medium__ 
+! There is only one contentarea on this page.
+! Jaap ! Assortment: __medium__ 
+! There is only one contentarea on this page.
 !===
 |===
-// Add tabel for the pages
+
+However, since each page holds exactly one contentarea, their is no relative priority between the contentareas of the pages and therefore this tabel add's no meaningful information.
+
+If we however would have decided to place the 'Shop-Information' and the 'Assortment' contentareas on the same page the relative priority between them would have mattered and the table then would provide some meaningful information that would be of value on the surface layer. Because a designer could then convert the priority by making the contentarea with the higher relative priority more visible prominent.
 
 // Add links
 // Add menu contentarea
@@ -141,3 +177,87 @@ Another advantage of having this tabel is that we can extend it with for instanc
 
 .Elements of User Experience ( link:https://ux.stackexchange.com/questions/51195/font-size-or-layout-which-to-decide-first[] )
 image::x7VC7.jpg[]
+
+== Deliverables
+
+=== Strategy Layer
+
+==== Business Case
+The site to be build should provide some basic information for customers so that visitors of the site know what the shop is about, where to find it and when the shop is open for business. The shop owner also wants to distingish himself from other sweets shop by showing that this shop really knows it's products.
+
+==== Personas
+
+* **Ilse**: A child of 11 years old who really likes all kinds of sweets especially when they are colorful.
+* **Jaap**: A business man who often travels and always wants to have some 'drop' with him. He always is interested in new kinds of 'drop' and the story behind it.
+
+=== Scope Layer
+
+==== User Stories
+
+. As a customer I want to know where the shop is located and how it looks in order to determine if I want to travel to it.
+. As a customer I want to know when the shop is open
+. As a customer I want to see what kinds of sweets the shop provides.
+. As the business owner I want to distingish the shop from other sweets sellers by showing that the shop really is specialized in sweets and can provide information normally not available at other stores.
+
+==== UML Use Cases
+there are no UML Use Cases
+
+=== The Structure layer
+
+image::./version1-structure2.png[First sitemap]
+
+.Contentarea documentation with ux-decision extension
+[%autowidth, cols="3*a", options=header]
+|===
+| Contentarea ID | Description | ux-extension
+
+| Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
+This contentarea therefore fullfills the requirements of the first and second user story. | 
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 8
+! She knows the store very well, therefore the location is known to her, but often forgets the opening hours of the store.
+
+! Jaap
+! priority 9 
+! Based on the impressions of the store he determines whether to buy his sweets at the nearest supermarket or at this specialized store. This information about the location and opening hours is very important to him because he travels often by car and has to determine the route to the shop and if he will make it in time after work before the shop closes. 
+!===
+| Liquorice-Information | A story combined with some images about the liquorice plant and the history of sweets in general. 
+This content area will be be the realization of the forth user story. |
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 1 
+! For her this information is boring, only the image of the liquorice plant might get her attention.
+
+! Jaap
+! priority 5 
+! For him this information is nice to know and might be useful in a conversation with foreigners who aren't familiar with this dutch treat. It also gives him some insurance that the store knows its sweets.
+!===
+| Assortment | A static overview of some sweets sold at the store (the third user story). |
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 8
+! She likes to look at the sweats, especially when they are colorful. It gives her ideas of what to buy next.
+
+! Jaap
+! priority 6
+! It gives him a good impression of what the store has to offer, but he would prefer a more compleet overview and online store.
+!===
+|===
+
+.page documentation
+[options=header]
+|===
+| Page ID | Startpage | LandingPage
+| Home-page | yes | no
+| Product-info-page | no | no
+| Assortment-page | no | no
+|===
+
+=== The Skeleton Layer
+
+=== The Surface Layer
+This would be the final product, which is out of scope for this tutorial
