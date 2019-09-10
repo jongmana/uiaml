@@ -214,10 +214,17 @@ A future extension with regard to the layout may adres this, but the layout is a
 
 Now that we know which contentareas there will be, we can define them one by one, with the U__ia__ML Contentarea Diagram (CAD).
 
-NOTE: The CAD is no wireframe, it is a blueprint that we can you to derive a wireframe. 
+NOTE: The CAD is no wireframe but a blueprint meant for designers and developers that we can you to derive a wireframe. It's not a diagram that should be readable for customers.
 
 === The menu contentarea
 
+To model the Menu contentarea we first need a Contentarea Diagram to hold the content of the menu contentarea.
+
+.The Menu Contentarea construct
+image::version1-skeleton1.png[The Menu contentarea construct]
+
+.The Menu Contentarea construct
+image::version1-skeleton2.png[The Menu contentarea construct]
 
 === The Shop-Information contentarea
 
