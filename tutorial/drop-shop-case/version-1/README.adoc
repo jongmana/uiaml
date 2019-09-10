@@ -7,6 +7,7 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
+
 In this version a very simple first website for the fictional case "The Drop Shop" will be designed.
 
 == The Strategy layer
