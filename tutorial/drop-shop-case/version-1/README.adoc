@@ -221,12 +221,127 @@ NOTE: The CAD is no wireframe but a blueprint meant for designers and developers
 To model the Menu contentarea we first need a Contentarea Diagram to hold the content of the menu contentarea.
 
 .The Menu Contentarea construct
-image::version1-skeleton1.png[The Menu contentarea construct]
+image::./version1-skeleton-menu1.png[The Menu contentarea construct]
 
-.The Menu Contentarea construct
-image::version1-skeleton2.png[The Menu contentarea construct]
+Next we will define 3 text labels, one for each link that can be followed from the menu.
+
+.The filled Menu Contentarea
+image::./version1-skeleton-menu2.png[The filled Menu contentarea]
+
+As stated by the specification of the cad-text-label we used, we also have to document these text labels.
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content
+| Home | Text label to indicate that by activating this label the user will be navigated to the home page.
+| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Inforamtion page.
+| Assortment | Text label to indicate that by activating this label the user will navigate to the Assortment page.
+|===
+
+To express that the labels are clickable and that they indeed activate a navigational link we have to add the links to them. +
+The ID's of the links have to match those in the sitemap diagram.
+
+.The Menu Contentarea with links
+image::./version1-skeleton-menu3.png[The Menu contentarea with links]
+
+And since this contentarea will also be present on all pages and a user might experience the menu as part of a site header, we can also include a clickable logo that will also result in a navigation toward the Home-page.
+
+.The final Menu Contentarea
+image::./version1-skeleton-menu4.png[The final Menu contentarea]
+
+As with the text label elements the image element also requires documentation.
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content
+| Logo | A company logo that by clicking will navigate the user to the home page.
+|===
+
+That there are now two links label 'Home', while the sitemap only shows one link has no consequences for either the sitemap diagram (SMD) or this contentarea diagram (CAD).
+
+We could stop here and continue to the next contentarea, but we also have an option to apply the 'conent specification extension', which we will do here to give you an impression of this extension.
+
+First we will determine whether the text labels are static or dynamically generated.
+
+.text label documentation with content specification
+[%autowidth, cols="3*a", options=header]
+|===
+| Text label | Intended content | type
+| Home | Text label to indicate that by activating this label the user will be navigated to the home page. | static
+| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Inforamtion page. | static
+| Assortment | Text label to indicate that by activating this label the user will navigate to the Assortment page. | static
+|===
+
+Next we will give the actual content for each text label for each language our shop site should support. Currently we our site will only support the Dutch language.
+
+.text label documentation, content specification
+[%autowidth, options="header"]
+|===
+| Text label | Language | Content
+| Home | NL | "Home"
+| Liquorice Information | NL | "Meer over drop"
+| Assortment | NL | "Ons assortiment"
+|===
+
+Something we could also do for the image element
+
+.image documentation with content specification extension
+[%autowidth, cols="4*a", options=header]
+|===
+| Image ID | Intended content | type | URI
+| Logo | A company logo that by clicking will navigate the user to the home page. | static | "D:\images\DropShopLogo.png"
+|===
 
 === The Shop-Information contentarea
+
+Since we have defined the intented content for this contentarea in the structure layer we now have an idea of the elements to be placed within this contentarea.
+
+[quote]
+Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
+
+We also want to welcome the visitors of the site which we combine with the impression images of the shop.
+We therefore can destinguish three parts of this contentarea:
+
+. Welcome & Impressions
+. Opening hours
+. Location information
+
+It depends on whether those three parts should be seperatly reusable or that the user should expirence them as three seperate parts of the page.
+If this is the case it might be a better choice to go back to the structure aspect of the site and model them as three seperate contentareas. For now however we will go on an model them on a single contentarea, the Shop-Information contentarea.
+
+We start with the Welcome & Impression part, which we could model as a text labal of which its container contains two images in order to expres the grouping of this information.
+
+.The Shop-Information Contentarea
+image::./version1-skeleton-shop1.png[The Shop-Information contentarea]
+
+To emphasize that the welcome text also needs a header we add an additional text label within the 'Welcome text' text label.
+
+.The Shop-Information Contentarea
+image::./version1-skeleton-shop2.png[The Shop-Information contentarea]
+
+And since we can see in the sitemap that this contentarea should contain links toward the Liquorice information page and the Assortment page, which would make no sense at the Opening hours and / or Location part of this contentarea we add those links as well.
+
+WARNING: But now we have a problem that we must deterministic determine from where those links are triggered. We therefore can not assign both links to a single content area element (CAE).
+
+.The Shop-Information Contentarea
+image::./version1-skeleton-shop3.png[The Shop-Information contentarea]
+
+However because the 'Welcome header' and the images are within the text label of the welcome text, they will inherit the link provided by the Welcome text element if not overwritten as it is the case with the Inside Impression image element.
+Again this isn't wat we wanted because a user might get confused that when he accidentally click on the welcome header get forwarded toward the Liquorice Information page.
+
+To solve this we add additional text labels within the Welcome text that hold the links.
+
+.The Shop-Information Contentarea
+image::./version1-skeleton-shop4.png[The Shop-Information contentarea]
+
+We can finish the page by adding the elements for the Opening hours and Location information.
+
+.The Shop-Information Contentarea
+image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
+
+NOTE: As with the Sitemap Diagram, the layout doesn't matter. A future extension with regard to the layout may adres this, but currently the layout is an aspect we don't model with U__ia__ML.
 
 === The Liquorice-Information contentarea
 
@@ -339,5 +454,42 @@ This content area will be be the realization of the forth user story. |
 
 === The Skeleton Layer
 
+==== Menu contentarea
+
+.The Menu Contentarea
+image::./version1-skeleton-menu4.png[The final Menu contentarea]
+
+.image documentation with content specification extension
+[%autowidth, cols="4*a", options=header]
+|===
+| Image ID | Intended content | type | URI
+| Logo | A company logo that by clicking will navigate the user to the home page. | static | "D:\images\DropShopLogo.png"
+|===
+
+.text label documentation
+[%autowidth, cols="3*a", options=header]
+|===
+| Text label | Intended content | type
+| Home | Text label to indicate that by activating this label the user will be navigated to the home page. | static
+| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Inforamtion page. | static
+| Assortment | Text label to indicate that by activating this label the user will navigate to the Assortment page. | static
+|===
+
+.text label documentation, content specification
+[%autowidth, options="header"]
+|===
+| Text label | Language | Content
+| Home | NL | "Home"
+| Liquorice Information | NL | "Meer over drop"
+| Assortment | NL | "Ons assortiment"
+|===
+
+==== Shop-Inforamtion Contentarea
+
+==== Liquorice-Information Contentarea
+
+==== Assortment Contentarea
+
 === The Surface Layer
+
 This would be the final product, which is out of scope for this tutorial
