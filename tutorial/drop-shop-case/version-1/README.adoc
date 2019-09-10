@@ -157,19 +157,74 @@ However, since each page holds exactly one contentarea, their is no relative pri
 
 If we however would have decided to place the 'Shop-Information' and the 'Assortment' contentareas on the same page the relative priority between them would have mattered and the table then would provide some meaningful information that would be of value on the surface layer. Because a designer could then convert the priority by making the contentarea with the higher relative priority more visible prominent.
 
-// Add links
-// Add menu contentarea
+So far the sitemap fine, but it doesn't show any navigational links between the pages. This would mean that their is no navigation between them and the pages are only reachable by entering their URL in the browser.
+We want to fix this and decide that a visitor should be able to access the Product-info-page as well as the Assortment-page from a link provided by the Shop-information contentarea.
+
+NOTE: A link always starts from within a contentarea and points to page.
+
+.U__ia__ML sitemap with links
+image::./version1-structure3.png[sitemap with links]
+
+Since the links we added are normal links triggered by the visitor of our site, no documentation of the links is required.
+
+It also doesn't matter how many links from the Shop-Inforamtion contentarea toward for instance the Assortment-page the actually will be, they all are represented by a single link.
+
+As can be seen from the sitemap the visitor will be able to navigate from the Shop-information contentarea of the default start page, the Home-page toward either the Product-info-page or the Assortment-page.
+The Shop-information contentarea drawn within the Home-page therefore has become the contentarea that defines all the links of the Shop-information contentarea, which we indicate by underlining the ID of the contentarea.
+
+We can also see that there are no links defined emmiting from the Liquorice-information contentarea as well as from the Assortment contentarea. 
+But those are the only occurrences of those contentareas within our sitemap and therefore they are also automatically the contentareas the defines the links they are providing (none), which is why their contentarea ids too are underlined.
+
+This means that a visitor who navigates away from the Home-page has to use the back button of the browser to navigate back to the Home-page. To solve this we could add links to the Assortment and Liquorice-Information contentarea but that is not what we want.
+We want to add a menu to the pages in order to enable navigation between the pages.
+
+We now could choose to add a menu to the description of each of the contentareas, but that is not a good choice. The menu is not something we would expect to be part of those contentareas. 
+
+A better way is to add a new contentarea "Menu" that will be present on all pages, and will enable the visitors to naviate to all the pages of our site.
+
+.Menu Contentarea documentation with ux-decision extension
+[%autowidth, cols="3*a", options=header]
+|===
+| Contentarea ID | Description | ux-extension
+
+| Menu | A navigational menu to access all pages of the site  | 
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 4
+! The menu doesn't contain the content that she wants to see on the site, but it is a contentarea she expect to be part of the site.
+
+! Jaap
+! priority 4 
+! The menu doesn't contain the content that he wants to see on the site, but it is a contentarea he expect to be part of the site.
+!===
+|===
+
+.U__ia__ML the final sitemap
+image::./version1-structure4.png[final sitemap]
+
+If you take a closer look at the sitemap you will see that from the three Menu contentarea only one is underlined. As stated earlier, the one underlined defines all the links emmitting from that contentarea. Therefore each contentarea of the sitemap has exactly one link defining contentarea. +
+The links defined at that contentarea are also available from the contentareas on the other pages. So on the Assortment-page for instance the menu contentarea also has three links going to the Home-page, the Product-info-page and one going to the Assortment-page itself.
+
+One might further notice that the Menu contentarea on the Assortment-page isn't on the top like with the other pages and that the Menu-contentarea is just as big as the other contentarea on the page. This however doesn't matter from a modeling point of view. The Sitemap Diagram (SMD) is no wireframe and but an abstract model of the content, their distribution over the pages and the links between the contentareas and the pages.
+A future extension with regard to the layout may adres this, but the layout is an aspect we currently don't model with U__ia__ML.
 
 
 == The Skeleton layer
 
-// CAD for Menu
+Now that we know which contentareas there will be, we can define them one by one, with the U__ia__ML Contentarea Diagram (CAD).
 
-// CAD for Shop-Information
+NOTE: The CAD is no wireframe, it is a blueprint that we can you to derive a wireframe. 
 
-// CAD for Liqurice-Information
+=== The menu contentarea
 
-// CAD for Assortment-page
+
+=== The Shop-Information contentarea
+
+=== The Liquorice-Information contentarea
+
+=== The Assortment contentarea
+
 
 == The Surface layer
 
@@ -209,12 +264,25 @@ there are no UML Use Cases
 
 === The Structure layer
 
-image::./version1-structure2.png[First sitemap]
+.The U__ia__ML Sitemap
+image::./version1-structure4.png[The U__ia__ML sitemap]
 
 .Contentarea documentation with ux-decision extension
 [%autowidth, cols="3*a", options=header]
 |===
 | Contentarea ID | Description | ux-extension
+
+| Menu | A navigational menu to access all pages of the site  | 
+[%autowidth, cols=3]
+!===
+! Ilse
+! priority 4
+! The menu doesn't contain the content that she wants to see on the site, but it is a contentarea she expect to be part of the site.
+
+! Jaap
+! priority 4 
+! The menu doesn't contain the content that he wants to see on the site, but it is a contentarea he expect to be part of the site.
+!===
 
 | Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
 This contentarea therefore fullfills the requirements of the first and second user story. | 
