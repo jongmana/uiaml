@@ -309,7 +309,13 @@ We therefore can distinguish three parts of this contentarea:
 . Location information
 
 It depends on whether those three parts should be separately reusable or that the user should experience them as three separate parts of the page.
-If this is the case it might be a better choice to go back to the structure aspect of the site and model them as three separate contentareas. For now however we will go on an model them on a single contentarea, the Shop-Information contentarea.
+If this is the case it might be a better choice to go back to the structure aspect of the site and model them as three separate contentareas. 
+
+According to the book link:http://www.jjg.net/elements/["The Elements of User Experience" by Jesse James Garrett], this would also be the better choice.
+
+image::./screen-shot-2014-08-10-at-3-18-22-pm.png[The five planes]
+
+However because in this particular case (its a tutorial were the author knows what lies ahead) the effect would be negligible and therefore we will go on an model them on a single contentarea, the Shop-Information contentarea, but in a real project we would strongly advise to take back a step and split up the Shop-Information Contentarea into three smaller contententareas.
 
 We start with the Welcome & Impression part, which we could model as a text label of which its container contains two images in order to express the grouping of this information.
 
@@ -366,7 +372,51 @@ The last part we have to take care of before we can finish this contentarea is t
 | Location information | The address of the shop as well as information about the nearest public transport stop and about parking.
 |===
 
+In case we would now also apply the content specification extension, we will encounter a problem when we specify the static content of the 'Welcome text'. This is because this text will have to contain the content specification of the 'Assortment' and 'Liquorice information' elements and it might be unclear where in the 'Welcome text' this content has to be applied. +
+To solve this issue we can make use of interpolation symbols '{{ }}' as they are also frequently used by several front-end frameworks, which refers to the CAE element to be substituted.
+An extract from content of the 'Welcome text' then would look like:
+
+.text label documentation, content specification
+[%autowidth, options="header"]
+|===
+| Text label | Language | Content
+| Assortment | NL | "aanbod van snoepgoed"
+| Liquorice Information | NL | "hier"
+| Welcome text | NL | "... in onze winkel vind je een ruim {{ Assortment }}, waaronder ook snoepgoed dat we in eigen productie toebereiden, waarover je {{ Liquorice Information }} meer informatie kunt vinden. ..."
+|===
+
+
 === The Liquorice-Information contentarea
+
+The contentarea description in the structure layer of the Liquorice-Information contentarea states:
+
+[quote]
+A story combined with some images about the liquorice plant and the history of sweets in general. This content area will be be the realization of the forth user story.
+
+Given the previous two contentareas the Liquorice-Information contentarea holds no new rocket science. And therefore the result is quickly derived.
+
+.The Liquorice-Information Contentarea
+image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content 
+| Liquorice story header | A short header of the liquorice story
+| Liquorice story | A story about liquorice, which should contain a little bit about the history of sweets, the liquorice plant itself, the production of sweets and the current state of sweets in general.
+|===
+
+If we take a closer look at the Intended content of the Liquorice story, we can make the argument that the it might be better to split up the text label into several smaller text labels.
+The argumentation of this decision is valid, but this is a typical example of where we also could go on and might redetermine this decision once the actual content is available.
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content 
+| Liquorice plant | An image that combines a drawing and photo of the liquorice plant.
+| Sweets production | A photo of the sweets production, preferable in a kitchen setting to show the handmade products that this shop also offers.
+| Sweets | The handmade final product.
+|===
 
 === The Assortment contentarea
 
