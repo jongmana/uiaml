@@ -419,6 +419,20 @@ The argumentation of this decision is valid, but this is a typical example of wh
 |===
 
 === The Assortment contentarea
+The Assortment contentarea should provide a static overview of some of the sweats sold at the store.
+We could approach the design of this contentarea as we did with the other contentareas by defining a couple of images and text labels to fill this area, resulting in a CAD that might look like this one.
+
+.The Assortment Contentarea
+image::./version1-skeleton-assortment1.png[The Assortment contentarea]
+
+What we can see in this CAD is that we have drawn three sweets, because the number of sweets that should be shown on this part of the page hasn't been determined yet, a number we have to are quickly on with the product owner, because as we stated in the beginning, this version of the site will be that of a static site.
+So imagine that we agree on 25 sweets, we could replicate 25 of the sweet-name text labels including the elements it contains and add them to the CAD. The result would be a dull model.
+
+But what we can see is that we have a repartition, a list of elements.
+This is something U__ia__ML can model as well.
+
+.The Assortment Contentarea
+image::./version1-skeleton-assortment2.png[The Assortment contentarea]
 
 
 == The Surface layer
@@ -585,7 +599,30 @@ image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
 
 ==== Liquorice-Information Contentarea
 
+.The Liquorice-Information Contentarea
+image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content 
+| Liquorice story header | A short header of the liquorice story
+| Liquorice story | A story about liquorice, which should contain a little bit about the history of sweets, the liquorice plant itself, the production of sweets and the current state of sweets in general.
+|===
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content 
+| Liquorice plant | An image that combines a drawing and photo of the liquorice plant.
+| Sweets production | A photo of the sweets production, preferable in a kitchen setting to show the handmade products that this shop also offers.
+| Sweets | The handmade final product.
+|===
+
 ==== Assortment Contentarea
+
+.The Assortment Contentarea
+image::./version1-skeleton-assortment2.png[The Assortment contentarea]
 
 === The Surface Layer
 
