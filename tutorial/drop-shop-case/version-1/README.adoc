@@ -11,13 +11,13 @@ endif::[]
 In this version a very simple first website for the fictional case "The Drop Shop" will be designed.
 
 == The Strategy layer
-Because we want to focus this tutorial on U__ia__ML we will not go very deep into how we approached this layer and the deliverables of this layer will be very summier.
+Because we want to focus this tutorial on U__ia__ML we will not go very deep into how we approached this layer and the deliverables of this layer will be very brief.
 
 === Business Case
-The site to be build should provide some basic information for customers so that visitors of the site know what the shop is about, where to find it and when the shop is open for business. The shop owner also wants to distingish himself from other sweets shop by showing that this shop really knows it's products.
+The site to be build should provide some basic information for customers so that visitors of the site know what the shop is about, where to find it and when the shop is open for business. The shop owner also wants to distinguish himself from other sweets shop by showing that this shop really knows it's products.
 
 === Personas
-The typical visitors of the shop and properly visitors of the site can be destingished between:
+The typical visitors of the shop and properly visitors of the site can be distinguished between:
 
 * **Ilse**: A child of 11 years old who really likes all kinds of sweets especially when they are colorful.
 * **Jaap**: A business man who often travels and always wants to have some 'drop' with him. He always is interested in new kinds of 'drop' and the story behind it.
@@ -30,7 +30,7 @@ But from the Business Case we can extract some User Stories:
 . As a customer I want to know where the shop is located and how it looks in order to determine if I want to travel to it.
 . As a customer I want to know when the shop is open
 . As a customer I want to see what kinds of sweets the shop provides.
-. As the business owner I want to distingish the shop from other sweets sellers by showing that the shop really is specialized in sweets and can provide information normally not available at other stores.
+. As the business owner I want to distinguish the shop from other sweets sellers by showing that the shop really is specialized in sweets and can provide information normally not available at other stores.
 
 == The Structure layer
 We will now use the U__ia__ML Sitemap Diagram (SMD) to provide the sitemap deliverable of the structure layer.
@@ -45,7 +45,7 @@ image::./version1-structure1.png[The contentarea]
 |===
 | Contentarea ID | Description
 | Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
-This contentarea therefore fullfills the requirements of the first and second user story.
+This contentarea therefore fulfills the requirements of the first and second user story.
 | Liquorice-Information | A story combined with some images about the liquorice plant and the history of sweets in general.
 This content area will be be the realization of the forth user story.
 | Assortment | A static overview of some sweets sold at the store (the third user story).
@@ -59,7 +59,7 @@ By also using the extension 'ux-decision' we can determine the content priority 
 | Contentarea ID | Description | ux-extension
 
 | Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
-This contentarea therefore fullfills the requirements of the first and second user story. | 
+This contentarea therefore fulfills the requirements of the first and second user story. | 
 [%autowidth, cols=3]
 !===
 ! Ilse
@@ -91,7 +91,7 @@ This content area will be be the realization of the forth user story. |
 
 ! Jaap
 ! priority 6
-! It gives him a good impression of what the store has to offer, but he would prefer a more compleet overview and online store.
+! It gives him a good impression of what the store has to offer, but he would prefer a more complete overview and online store.
 !===
 |===
 
@@ -113,8 +113,8 @@ The minimal documentation for this sitemap is given by the following tabel.
 | Assortment-page | no | no
 |===
 
-Since this tabel doesn't add information we already can see in the sitemap image itself we could argu that we can skip this tabel. But since their is currently no U__ia__ML CASE tool available, and these sitemaps are often drawn by hand, we add the tabel to make sure that we don't misinterpret a handdrawn sitemap. +
-Another advantage of having this tabel is that we can extend it with for instance the ex-decision extension.
+Since this table doesn't add information we already can see in the sitemap image itself we could argue that we can skip this table. But since their is currently no U__ia__ML CASE tool available, and these sitemaps are often drawn by hand, we add the table to make sure that we don't misinterpret a hand drawn sitemap. +
+Another advantage of having this table is that we can extend it with for instance the ex-decision extension.
 
 .page documentation with ux-decision extension
 [%autowidth, cols="4*a"]
@@ -153,7 +153,7 @@ Page
 !===
 |===
 
-However, since each page holds exactly one contentarea, their is no relative priority between the contentareas of the pages and therefore this tabel add's no meaningful information.
+However, since each page holds exactly one contentarea, their is no relative priority between the contentareas of the pages and therefore this table adds no meaningful information.
 
 If we however would have decided to place the 'Shop-Information' and the 'Assortment' contentareas on the same page the relative priority between them would have mattered and the table then would provide some meaningful information that would be of value on the surface layer. Because a designer could then convert the priority by making the contentarea with the higher relative priority more visible prominent.
 
@@ -167,12 +167,12 @@ image::./version1-structure3.png[sitemap with links]
 
 Since the links we added are normal links triggered by the visitor of our site, no documentation of the links is required.
 
-It also doesn't matter how many links from the Shop-Inforamtion contentarea toward for instance the Assortment-page the actually will be, they all are represented by a single link.
+It also doesn't matter how many links from the Shop-Information contentarea toward for instance the Assortment-page the actually will be, they all are represented by a single link.
 
 As can be seen from the sitemap the visitor will be able to navigate from the Shop-information contentarea of the default start page, the Home-page toward either the Product-info-page or the Assortment-page.
 The Shop-information contentarea drawn within the Home-page therefore has become the contentarea that defines all the links of the Shop-information contentarea, which we indicate by underlining the ID of the contentarea.
 
-We can also see that there are no links defined emmiting from the Liquorice-information contentarea as well as from the Assortment contentarea. 
+We can also see that there are no links defined emitting from the Liquorice-information contentarea as well as from the Assortment contentarea. 
 But those are the only occurrences of those contentareas within our sitemap and therefore they are also automatically the contentareas the defines the links they are providing (none), which is why their contentarea ids too are underlined.
 
 This means that a visitor who navigates away from the Home-page has to use the back button of the browser to navigate back to the Home-page. To solve this we could add links to the Assortment and Liquorice-Information contentarea but that is not what we want.
@@ -180,7 +180,7 @@ We want to add a menu to the pages in order to enable navigation between the pag
 
 We now could choose to add a menu to the description of each of the contentareas, but that is not a good choice. The menu is not something we would expect to be part of those contentareas. 
 
-A better way is to add a new contentarea "Menu" that will be present on all pages, and will enable the visitors to naviate to all the pages of our site.
+A better way is to add a new contentarea "Menu" that will be present on all pages, and will enable the visitors to navigate to all the pages of our site.
 
 .Menu Contentarea documentation with ux-decision extension
 [%autowidth, cols="3*a", options=header]
@@ -203,11 +203,11 @@ A better way is to add a new contentarea "Menu" that will be present on all page
 .U__ia__ML the final sitemap
 image::./version1-structure4.png[final sitemap]
 
-If you take a closer look at the sitemap you will see that from the three Menu contentarea only one is underlined. As stated earlier, the one underlined defines all the links emmitting from that contentarea. Therefore each contentarea of the sitemap has exactly one link defining contentarea. +
+If you take a closer look at the sitemap you will see that from the three Menu contentarea only one is underlined. As stated earlier, the one underlined defines all the links emitting from that contentarea. Therefore each contentarea of the sitemap has exactly one link defining contentarea. +
 The links defined at that contentarea are also available from the contentareas on the other pages. So on the Assortment-page for instance the menu contentarea also has three links going to the Home-page, the Product-info-page and one going to the Assortment-page itself.
 
 One might further notice that the Menu contentarea on the Assortment-page isn't on the top like with the other pages and that the Menu-contentarea is just as big as the other contentarea on the page. This however doesn't matter from a modeling point of view. The Sitemap Diagram (SMD) is no wireframe and but an abstract model of the content, their distribution over the pages and the links between the contentareas and the pages.
-A future extension with regard to the layout may adres this, but the layout is an aspect we currently don't model with U__ia__ML.
+A future extension with regard to the layout may address this, but the layout is an aspect we currently don't model with U__ia__ML.
 
 
 == The Skeleton layer
@@ -235,7 +235,7 @@ As stated by the specification of the cad-text-label we used, we also have to do
 |===
 | Text label | Intended content
 | Home | Text label to indicate that by activating this label the user will be navigated to the home page.
-| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Inforamtion page.
+| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Information page.
 | Assortment | Text label to indicate that by activating this label the user will navigate to the Assortment page.
 |===
 
@@ -261,7 +261,7 @@ As with the text label elements the image element also requires documentation.
 
 That there are now two links label 'Home', while the sitemap only shows one link has no consequences for either the sitemap diagram (SMD) or this contentarea diagram (CAD).
 
-We could stop here and continue to the next contentarea, but we also have an option to apply the 'conent specification extension', which we will do here to give you an impression of this extension.
+We could stop here and continue to the next contentarea, but we also have an option to apply the 'content specification extension', which we will do here to give you an impression of this extension.
 
 First we will determine whether the text labels are static or dynamically generated.
 
@@ -270,7 +270,7 @@ First we will determine whether the text labels are static or dynamically genera
 |===
 | Text label | Intended content | type
 | Home | Text label to indicate that by activating this label the user will be navigated to the home page. | static
-| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Inforamtion page. | static
+| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Information page. | static
 | Assortment | Text label to indicate that by activating this label the user will navigate to the Assortment page. | static
 |===
 
@@ -296,22 +296,22 @@ Something we could also do for the image element
 
 === The Shop-Information contentarea
 
-Since we have defined the intented content for this contentarea in the structure layer we now have an idea of the elements to be placed within this contentarea.
+Since we have defined the intended content for this contentarea in the structure layer we now have an idea of the elements to be placed within this contentarea.
 
 [quote]
 Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
 
 We also want to welcome the visitors of the site which we combine with the impression images of the shop.
-We therefore can destinguish three parts of this contentarea:
+We therefore can distinguish three parts of this contentarea:
 
 . Welcome & Impressions
 . Opening hours
 . Location information
 
-It depends on whether those three parts should be seperatly reusable or that the user should expirence them as three seperate parts of the page.
-If this is the case it might be a better choice to go back to the structure aspect of the site and model them as three seperate contentareas. For now however we will go on an model them on a single contentarea, the Shop-Information contentarea.
+It depends on whether those three parts should be separately reusable or that the user should experience them as three separate parts of the page.
+If this is the case it might be a better choice to go back to the structure aspect of the site and model them as three separate contentareas. For now however we will go on an model them on a single contentarea, the Shop-Information contentarea.
 
-We start with the Welcome & Impression part, which we could model as a text labal of which its container contains two images in order to expres the grouping of this information.
+We start with the Welcome & Impression part, which we could model as a text label of which its container contains two images in order to express the grouping of this information.
 
 .The Shop-Information Contentarea
 image::./version1-skeleton-shop1.png[The Shop-Information contentarea]
@@ -341,7 +341,7 @@ We can finish the page by adding the elements for the Opening hours and Location
 .The Shop-Information Contentarea
 image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
 
-NOTE: As with the Sitemap Diagram, the layout doesn't matter. A future extension with regard to the layout may adres this, but currently the layout is an aspect we don't model with U__ia__ML. The grouping however gives some visual layout gidelines, which for instance would be a layout violation if we would place the Outside Impression Image as part of the Location Information.
+NOTE: As with the Sitemap Diagram, the layout doesn't matter. A future extension with regard to the layout may address this, but currently the layout is an aspect we don't model with U__ia__ML. The grouping however gives some visual layout guidelines, which for instance would be a layout violation if we would place the Outside Impression Image as part of the Location Information.
 
 The last part we have to take care of before we can finish this contentarea is the documentation part of the elements.
 
@@ -363,7 +363,7 @@ The last part we have to take care of before we can finish this contentarea is t
 | Liquorice information | part of the welcome text element that links to the Liquorice-Information-page.
 | Assortment | part of the welcome text element that links to the Assortment-page.
 | Opening hours | A table with the opening hours of the shop.
-| Location information | The adres of the shop as well as information about the nearest public transport stop and about parking.
+| Location information | The address of the shop as well as information about the nearest public transport stop and about parking.
 |===
 
 === The Liquorice-Information contentarea
@@ -388,7 +388,7 @@ In this chapter only the parts from this tutorial that would go into such a desi
 === Strategy Layer
 
 ==== Business Case
-The site to be build should provide some basic information for customers so that visitors of the site know what the shop is about, where to find it and when the shop is open for business. The shop owner also wants to distingish himself from other sweets shop by showing that this shop really knows it's products.
+The site to be build should provide some basic information for customers so that visitors of the site know what the shop is about, where to find it and when the shop is open for business. The shop owner also wants to distinguish himself from other sweets shop by showing that this shop really knows it's products.
 
 ==== Personas
 
@@ -402,7 +402,7 @@ The site to be build should provide some basic information for customers so that
 . As a customer I want to know where the shop is located and how it looks in order to determine if I want to travel to it.
 . As a customer I want to know when the shop is open
 . As a customer I want to see what kinds of sweets the shop provides.
-. As the business owner I want to distingish the shop from other sweets sellers by showing that the shop really is specialized in sweets and can provide information normally not available at other stores.
+. As the business owner I want to distinguish the shop from other sweets sellers by showing that the shop really is specialized in sweets and can provide information normally not available at other stores.
 
 ==== UML Use Cases
 there are no UML Use Cases
@@ -430,7 +430,7 @@ image::./version1-structure4.png[The U__ia__ML sitemap]
 !===
 
 | Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
-This contentarea therefore fullfills the requirements of the first and second user story. | 
+This contentarea therefore fulfills the requirements of the first and second user story. | 
 [%autowidth, cols=3]
 !===
 ! Ilse
@@ -462,7 +462,7 @@ This content area will be be the realization of the forth user story. |
 
 ! Jaap
 ! priority 6
-! It gives him a good impression of what the store has to offer, but he would prefer a more compleet overview and online store.
+! It gives him a good impression of what the store has to offer, but he would prefer a more complete overview and online store.
 !===
 |===
 
@@ -494,7 +494,7 @@ image::./version1-skeleton-menu4.png[The final Menu contentarea]
 |===
 | Text label | Intended content | type
 | Home | Text label to indicate that by activating this label the user will be navigated to the home page. | static
-| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Inforamtion page. | static
+| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Information page. | static
 | Assortment | Text label to indicate that by activating this label the user will navigate to the Assortment page. | static
 |===
 
@@ -530,7 +530,7 @@ image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
 | Liquorice information | part of the welcome text element that links to the Liquorice-Information-page.
 | Assortment | part of the welcome text element that links to the Assortment-page.
 | Opening hours | A table with the opening hours of the shop.
-| Location information | The adres of the shop as well as information about the nearest public transport stop and about parking.
+| Location information | The address of the shop as well as information about the nearest public transport stop and about parking.
 |===
 
 ==== Liquorice-Information Contentarea
