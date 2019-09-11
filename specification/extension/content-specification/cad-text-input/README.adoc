@@ -30,7 +30,7 @@ Otherwise it's static.
 | filename [Language] | URI | Language should be the ISO 639 Language code indicating the language of the static content. +
 Finally the filename indicates the file that holds the content in that language to be finally used for this element.
 | String [Language] | String | Language should be the ISO 639 Language code indicating the language of the static content. +
-Finally the string given holds teh content in that language to be finally used for this element.
+Finally the string given holds the content in that language to be finally used for this element.
 |===
 NOTE: only one of those two properties should be used for a given language.
 
