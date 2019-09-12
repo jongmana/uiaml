@@ -27,13 +27,15 @@ Otherwise it's static.
 [options=header]
 |===
 | Property | Type | Description
-| filename [Language] | URI | Language should be the ISO 639 Language code indicating the language of the static content. +
-Finally the filename indicates the file that holds the content in that language to be finally used for this element.
-| String [Language] | String | Language should be the ISO 639 Language code indicating the language of the static content. +
-Finally the string given holds the content in that language to be finally used for this element.
+| language | String | Language of the static content, preferable as link:https://www.iso.org/iso-639-language-codes.html[ISO 639 Language code].
+| filename [Language] | URI | For each language specified the filename indicates the file that holds the final content for that language.
+| string [Language] | String | For each language specified the string given holds the final content for that language.
 |===
-NOTE: only one of those two properties should be used for a given language.
-
+[NOTE] 
+====
+. for each language, only filename or string property should be used, never both, for a given text label.
+. within the content provided interpolation of other content can be applied by referring toward the other content using the notation: *{{ text label id }}*.
+====
 .extension for dynamic text labels
 [options=header]
 |===
