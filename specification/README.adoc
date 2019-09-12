@@ -1,0 +1,17 @@
+= U__ia__ML
+
+[frame=none, grid=none]
+|===
+|The **U**niversal __**i**nformation **a**rchitecture__ **M**odeling **L**anguage (U__ia__ML) should help to model and document application front ends. a| image:../images/Logo_UiaML.jpg[UiaML logo, 200] 
+|===
+
+Currently U__ia__ML specification distinguish between the following core diagrams:
+
+* link:./core/smd/README.adoc[SiteMap Diagram (SMD)]
+* link:./core/cad/README.adoc[Contentarea Diagram (CAD)]
+
+In addition to the core diagrams there are also extensions, that can be applied.
+Currently the following extensions are defined:
+
+* link:./extension/content-specification/README.adoc[Content Specification]
+* link:./extension/ux-decisions/README.adoc[UX Decisions]

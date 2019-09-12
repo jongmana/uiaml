@@ -1,0 +1,30 @@
+= U__ia__ML Tutorial: The Drop Shop
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+This U__ia__ML tutorial will show you how to apply U__ia__ML in a case. 
+The approach of this case is based on the five elements described by Jesse James Garrett in his book link:http://www.jjg.net/elements/["The Elements of User Experience"]
+
+.The Element of User Experience  link:https://www.flickr.com/photos/caseorganic/4711059250[]
+image::4711059250_c188687125_z.jpg[]
+
+
+The case used in this tutorial is based on a fictional store, called the 'Drop Shop'.
+
+"Drop" is the dutch word for liqurorice, and is one of the most favorite sweets of the Dutch which therefore comes in lots of varieties.
+"The Drop Shop" is a fictional sweets store that is specialized in 'drop'. +
+In this case the shop owner wants a website to promote his shop and offers an online webshop. But because it's a very small shop with little financial funding for a site, we will start with a very simple static site. An from there we will iterate toward the final goal, the  online shop site.
+
+* link:./version-1/README.adoc[Version 1 - A static site]
+* Version 2 - Dynamic Assortment
+// Version-2: add dynamically maintain the assortment -> Use cases add, delete and modify sweet -> UiaML forms, rights, landing page (login for owner)-> reference pages...
+
+* Version 3 - An online shop
+
+// Version-3: add order use case -> popup, associated pages (mail)
