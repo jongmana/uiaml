@@ -434,18 +434,84 @@ This is something U__ia__ML can model as well.
 .The Assortment Contentarea
 image::./version1-skeleton-assortment2.png[The Assortment contentarea]
 
+The first part of this contentarea is nothing new, only to text labels.
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content 
+| Assortment header | A short header that express what this contentarea is about.
+| Assortment intro | a short introduction to this contentarea, so that the visitors know that this is area shows only a selection of the products and that you have to come to the store to buy them.
+|===
+
+But then we see a new symbol, the cae-list element with the ID 'Sweet'.
+The [25] behind the ID indicates that this is a list that holds 25 items, which makes sense since that this site is a static site.
+Within the container of the list element we see text label elements and an image element. 
+So we could think that the documentation part of those elements contained within the list would be:
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content 
+| name | Name of the sweet
+| description | A short description of the sweet
+| price | the price of the sweet incl vat.
+|===
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content 
+| product | a photo of the sweet.
+|===
+
+But now we will get into problems when we want to refer to a specific sweet, for instance because we want to specify the content for that sweet. This problem can be solved by using the U__ia__ML path together with the ID.
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content 
+| sweet[n].name | Name of the sweet
+| sweet[n].description | A short description of the sweet
+| sweet[n].price | the price of the sweet incl vat.
+|===
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content 
+| sweet[n].product | a photo of the sweet.
+|===
+
+Where the index 'n' can be replaced by an actual number to point to a specific item within the list.
+
+NOTE: Actually the U__ia__ML path given is a referential path, from the current contentarea diagram. To express the full path the U__ia__ML path would be preceded by the contentarea id.
+
+The only element left on the contentarea that still needs to be documented is the list element.
+
+.List documentation
+[%autowidth, cols="4*a", options=header]
+|===
+| List ID | Sort Element | Sort Order | Recursion
+| Sweet | Name | Alphabetically - Ascending | no
+|===
+
+This documentation of the list element tells us that the items in the list will have an initial sort order. They will be ordered alphabetically based on the value of the 'name' element.
+
+There is also an attribute that this list is not recursive. Recursive lists are lists that contain clickable items that results in a new list of the same structure, as it is for instance the case with the lists in your file explorer (that list contains folders and files, and when you select a folder you enter a recursive step that results again in a list of files and folders).
 
 == The Surface layer
 
-// not part of UiaML but we can show that the layout is not determined by the specification.
+Now that all contentarea have been modelled, we can continue toward the the final plane, the surface layer.
+
+The lower layers have determined a lot of choices, which reduces the choices a designer / developer can make in this final layer, which is a good thing.
 
 .Elements of User Experience ( link:https://ux.stackexchange.com/questions/51195/font-size-or-layout-which-to-decide-first[] )
 image::x7VC7.jpg[]
 
+The surface layer however is not a part that is covered by U__ia__ML, and which will conclude this tutorial of the first version of the Drop Shop.
 
-
-
-== Deliverables
+== Appendix - Deliverables
 Since this is a tutorial that contains many images and tables you might wonder what remains if you would write a design document.
 In this chapter only the parts from this tutorial that would go into such a design document are extracted.
 
@@ -623,6 +689,31 @@ image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
 
 .The Assortment Contentarea
 image::./version1-skeleton-assortment2.png[The Assortment contentarea]
+
+.List documentation
+[%autowidth, cols="4*a", options=header]
+|===
+| List ID | Sort Element | Sort Order | Recursion
+| Sweet | Name | Alphabetically - Ascending | no
+|===
+
+.text label documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Text label | Intended content 
+| Assortment header | A short header that express what this contentarea is about.
+| Assortment intro | a short introduction to this contentarea, so that the visitors know that this is area shows only a selection of the products and that you have to come to the store to buy them.
+| sweet[n].name | Name of the sweet
+| sweet[n].description | A short description of the sweet
+| sweet[n].price | the price of the sweet incl vat.
+|===
+
+.image documentation
+[%autowidth, cols="2*a", options=header]
+|===
+| Image ID | Intended content 
+| sweet[n].product | a photo of the sweet.
+|===
 
 === The Surface Layer
 
