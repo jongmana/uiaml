@@ -1,4 +1,8 @@
-= The Drop Shop - Version 1
+= The Drop Shop: A first static site
+:Author: Alex Jongman
+The Drop Shop Version 1
+:sectnums:
+:toc:
 :icons: font
 ifdef::env-github[]
 :tip-caption: :bulb:
