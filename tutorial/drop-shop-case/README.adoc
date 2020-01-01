@@ -20,7 +20,7 @@ The case used in this tutorial is based on a fictional store, called the 'Drop S
 "The Drop Shop" is a fictional sweets store that is specialized in 'drop'. +
 In this case the shop owner wants a website to promote his shop and offers an online webshop. But because it's a very small shop with little financial funding for a site, we will start with a very simple static site. An from there we will iterate toward the final goal, the  online shop site.
 
-* link:./version-1/README.adoc[Tutorial Part 1 - A static site]
+* link:./part-1/README.adoc[Tutorial Part 1 - A static site]
 * Tutorial Part 2 - Dynamic Assortment
 // Tutorial Part 2: add dynamically maintain the assortment -> Use cases add, delete and modify sweet -> UiaML forms, rights, landing page (login for owner)-> reference pages...
 

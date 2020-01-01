@@ -1,6 +1,6 @@
 = The Drop Shop: A first static site
 :Author: Alex Jongman
-The Drop Shop Version 1
+The Drop Shop - Tutorial Part 1
 :sectnums:
 :toc:
 :icons: font
@@ -12,7 +12,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-In this version a very simple first website for the fictional case "The Drop Shop" will be designed.
+In this tutorial a very simple first website for the fictional case "The Drop Shop" will be designed.
 
 == The Strategy layer
 Because we want to focus this tutorial on U__ia__ML we will not go very deep into how we approached this layer and the deliverables of this layer will be very brief.
@@ -42,7 +42,7 @@ We will now use the U__ia__ML Sitemap Diagram (SMD) to provide the sitemap deliv
 We start this process of defining the SMD model by first determine the contentareas we want to use and their documentation.
 
 .The Contentareas
-image::./version1-structure1.png[The contentarea]
+image::./part1-structure1.png[The contentarea]
 
 .Contentarea documentation
 [%autowidth, options=header]
@@ -104,7 +104,7 @@ From the table we can conclude that the 'Shop-Information' is most important to 
 Determining now our pages we decide to go with 3 pages, one for each of our contentareas and that the startpage should be the page containing the 'Shop-Information'. Which are all part of our 'Drop-Shop' Sitemap.
 
 .First U__ia__ML sitemap
-image::./version1-structure2.png[First sitemap]
+image::./part1-structure2.png[First sitemap]
 
 The minimal documentation for this sitemap is given by the following tabel.
 
@@ -167,7 +167,7 @@ We want to fix this and decide that a visitor should be able to access the Produ
 NOTE: A link always starts from within a contentarea and points to page.
 
 .U__ia__ML sitemap with links
-image::./version1-structure3.png[sitemap with links]
+image::./part1-structure3.png[sitemap with links]
 
 Since the links we added are normal links triggered by the visitor of our site, no documentation of the links is required.
 
@@ -205,7 +205,7 @@ A better way is to add a new contentarea "Menu" that will be present on all page
 |===
 
 .U__ia__ML the final sitemap
-image::./version1-structure4.png[final sitemap]
+image::./part1-structure4.png[final sitemap]
 
 If you take a closer look at the sitemap you will see that from the three Menu contentarea only one is underlined. As stated earlier, the one underlined defines all the links emitting from that contentarea. Therefore each contentarea of the sitemap has exactly one link defining contentarea. +
 The links defined at that contentarea are also available from the contentareas on the other pages. So on the Assortment-page for instance the menu contentarea also has three links going to the Home-page, the Product-info-page and one going to the Assortment-page itself.
@@ -225,12 +225,12 @@ NOTE: The CAD is no wireframe but a blueprint meant for designers and developers
 To model the Menu contentarea we first need a Contentarea Diagram to hold the content of the menu contentarea.
 
 .The Menu Contentarea construct
-image::./version1-skeleton-menu1.png[The Menu contentarea construct]
+image::./part1-skeleton-menu1.png[The Menu contentarea construct]
 
 Next we will define 3 text labels, one for each link that can be followed from the menu.
 
 .The filled Menu Contentarea
-image::./version1-skeleton-menu2.png[The filled Menu contentarea]
+image::./part1-skeleton-menu2.png[The filled Menu contentarea]
 
 As stated by the specification of the cad-text-label we used, we also have to document these text labels.
 
@@ -247,12 +247,12 @@ To express that the labels are clickable and that they indeed activate a navigat
 The ID's of the links have to match those in the sitemap diagram.
 
 .The Menu Contentarea with links
-image::./version1-skeleton-menu3.png[The Menu contentarea with links]
+image::./part1-skeleton-menu3.png[The Menu contentarea with links]
 
 And since this contentarea will also be present on all pages and a user might experience the menu as part of a site header, we can also include a clickable logo that will also result in a navigation toward the Home-page.
 
 .The final Menu Contentarea
-image::./version1-skeleton-menu4.png[The final Menu contentarea]
+image::./part1-skeleton-menu4.png[The final Menu contentarea]
 
 As with the text label elements the image element also requires documentation.
 
@@ -324,19 +324,19 @@ However because in this particular case (its a tutorial were the author knows wh
 We start with the Welcome & Impression part, which we could model as a text label of which its container contains two images in order to express the grouping of this information.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop1.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop1.png[The Shop-Information contentarea]
 
 To emphasize that the welcome text also needs a header we add an additional text label within the 'Welcome text' text label.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop2.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop2.png[The Shop-Information contentarea]
 
 And since we can see in the sitemap that this contentarea should contain links toward the Liquorice information page and the Assortment page, which would make no sense at the Opening hours and / or Location part of this contentarea we add those links as well.
 
 WARNING: But now we have a problem that we must deterministic determine from where those links are triggered. We therefore can not assign both links to a single content area element (CAE).
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop3.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop3.png[The Shop-Information contentarea]
 
 However because the 'Welcome header' and the images are within the text label of the welcome text, they will inherit the link provided by the Welcome text element if not overwritten as it is the case with the Inside Impression image element.
 Again this isn't wat we wanted because a user might get confused that when he accidentally click on the welcome header get forwarded toward the Liquorice Information page.
@@ -344,12 +344,12 @@ Again this isn't wat we wanted because a user might get confused that when he ac
 To solve this we add additional text labels within the Welcome text that hold the links.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop4.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop4.png[The Shop-Information contentarea]
 
 We can finish the page by adding the elements for the Opening hours and Location information.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop5.png[The Shop-Information contentarea]
 
 NOTE: As with the Sitemap Diagram, the layout doesn't matter. A future extension with regard to the layout may address this, but currently the layout is an aspect we don't model with U__ia__ML. The grouping however gives some visual layout guidelines, which for instance would be a layout violation if we would place the Outside Impression Image as part of the Location Information.
 
@@ -400,7 +400,7 @@ A story combined with some images about the liquorice plant and the history of s
 Given the previous two contentareas the Liquorice-Information contentarea holds no new rocket science. And therefore the result is quickly derived.
 
 .The Liquorice-Information Contentarea
-image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
+image::./part1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
 
 .text label documentation
 [%autowidth, cols="2*a", options=header]
@@ -427,7 +427,7 @@ The Assortment contentarea should provide a static overview of some of the sweat
 We could approach the design of this contentarea as we did with the other contentareas by defining a couple of images and text labels to fill this area, resulting in a CAD that might look like this one.
 
 .The Assortment Contentarea
-image::./version1-skeleton-assortment1.png[The Assortment contentarea]
+image::./part1-skeleton-assortment1.png[The Assortment contentarea]
 
 What we can see in this CAD is that we have drawn three sweets, because the number of sweets that should be shown on this part of the page hasn't been determined yet, a number we have to are quickly on with the product owner, because as we stated in the beginning, this version of the site will be that of a static site.
 So imagine that we agree on 25 sweets, we could replicate 25 of the sweet-name text labels including the elements it contains and add them to the CAD. The result would be a dull model.
@@ -436,7 +436,7 @@ But what we can see is that we have a repartition, a list of elements.
 This is something U__ia__ML can model as well.
 
 .The Assortment Contentarea
-image::./version1-skeleton-assortment2.png[The Assortment contentarea]
+image::./part1-skeleton-assortment2.png[The Assortment contentarea]
 
 The first part of this contentarea is nothing new, only to text labels.
 
@@ -544,7 +544,7 @@ there are no UML Use Cases
 === The Structure layer
 
 .The U__ia__ML Sitemap
-image::./version1-structure4.png[The U__ia__ML sitemap]
+image::./part1-structure4.png[The U__ia__ML sitemap]
 
 .Contentarea documentation with ux-decision extension
 [%autowidth, cols="3*a", options=header]
@@ -614,7 +614,7 @@ This content area will be be the realization of the forth user story. |
 ==== Menu contentarea
 
 .The Menu Contentarea
-image::./version1-skeleton-menu4.png[The final Menu contentarea]
+image::./part1-skeleton-menu4.png[The final Menu contentarea]
 
 .image documentation with content specification extension
 [%autowidth, cols="4*a", options=header]
@@ -644,7 +644,7 @@ image::./version1-skeleton-menu4.png[The final Menu contentarea]
 ==== Shop-Inforamtion Contentarea
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop5.png[The Shop-Information contentarea]
 
 .image documentation
 [%autowidth, cols="2*a", options=header]
@@ -670,7 +670,7 @@ image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
 ==== Liquorice-Information Contentarea
 
 .The Liquorice-Information Contentarea
-image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
+image::./part1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
 
 .text label documentation
 [%autowidth, cols="2*a", options=header]
@@ -692,7 +692,7 @@ image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
 ==== Assortment Contentarea
 
 .The Assortment Contentarea
-image::./version1-skeleton-assortment2.png[The Assortment contentarea]
+image::./part1-skeleton-assortment2.png[The Assortment contentarea]
 
 .List documentation
 [%autowidth, cols="4*a", options=header]
