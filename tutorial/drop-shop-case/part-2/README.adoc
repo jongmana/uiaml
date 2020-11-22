@@ -1,0 +1,11 @@
+= The Drop Shop - Version 2
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+In this version we will add functionality to add, modify and remove sweets to the assortment shown.

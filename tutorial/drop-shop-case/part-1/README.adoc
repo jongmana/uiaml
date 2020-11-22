@@ -1,4 +1,8 @@
-= The Drop Shop - Version 1
+= The Drop Shop: A first static site
+:Author: Alex Jongman
+The Drop Shop - Tutorial Part 1
+:sectnums:
+:toc:
 :icons: font
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -8,7 +12,9 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-In this version a very simple first website for the fictional case "The Drop Shop" will be designed.
+In this tutorial a very simple first website for the fictional case "The Drop Shop" will be designed step by step.
+The result of this tutorial is a design document which can be found 
+link:./part1-design-document.adoc[here].
 
 == The Strategy layer
 Because we want to focus this tutorial on U__ia__ML we will not go very deep into how we approached this layer and the deliverables of this layer will be very brief.
@@ -38,7 +44,7 @@ We will now use the U__ia__ML Sitemap Diagram (SMD) to provide the sitemap deliv
 We start this process of defining the SMD model by first determine the contentareas we want to use and their documentation.
 
 .The Contentareas
-image::./version1-structure1.png[The contentarea]
+image::./part1-structure1.png[The contentarea]
 
 .Contentarea documentation
 [%autowidth, options=header]
@@ -100,7 +106,7 @@ From the table we can conclude that the 'Shop-Information' is most important to 
 Determining now our pages we decide to go with 3 pages, one for each of our contentareas and that the startpage should be the page containing the 'Shop-Information'. Which are all part of our 'Drop-Shop' Sitemap.
 
 .First U__ia__ML sitemap
-image::./version1-structure2.png[First sitemap]
+image::./part1-structure2.png[First sitemap]
 
 The minimal documentation for this sitemap is given by the following tabel.
 
@@ -163,7 +169,7 @@ We want to fix this and decide that a visitor should be able to access the Produ
 NOTE: A link always starts from within a contentarea and points to page.
 
 .U__ia__ML sitemap with links
-image::./version1-structure3.png[sitemap with links]
+image::./part1-structure3.png[sitemap with links]
 
 Since the links we added are normal links triggered by the visitor of our site, no documentation of the links is required.
 
@@ -201,7 +207,7 @@ A better way is to add a new contentarea "Menu" that will be present on all page
 |===
 
 .U__ia__ML the final sitemap
-image::./version1-structure4.png[final sitemap]
+image::./part1-structure4.png[final sitemap]
 
 If you take a closer look at the sitemap you will see that from the three Menu contentarea only one is underlined. As stated earlier, the one underlined defines all the links emitting from that contentarea. Therefore each contentarea of the sitemap has exactly one link defining contentarea. +
 The links defined at that contentarea are also available from the contentareas on the other pages. So on the Assortment-page for instance the menu contentarea also has three links going to the Home-page, the Product-info-page and one going to the Assortment-page itself.
@@ -221,12 +227,12 @@ NOTE: The CAD is no wireframe but a blueprint meant for designers and developers
 To model the Menu contentarea we first need a Contentarea Diagram to hold the content of the menu contentarea.
 
 .The Menu Contentarea construct
-image::./version1-skeleton-menu1.png[The Menu contentarea construct]
+image::./part1-skeleton-menu1.png[The Menu contentarea construct]
 
 Next we will define 3 text labels, one for each link that can be followed from the menu.
 
 .The filled Menu Contentarea
-image::./version1-skeleton-menu2.png[The filled Menu contentarea]
+image::./part1-skeleton-menu2.png[The filled Menu contentarea]
 
 As stated by the specification of the cad-text-label we used, we also have to document these text labels.
 
@@ -243,12 +249,12 @@ To express that the labels are clickable and that they indeed activate a navigat
 The ID's of the links have to match those in the sitemap diagram.
 
 .The Menu Contentarea with links
-image::./version1-skeleton-menu3.png[The Menu contentarea with links]
+image::./part1-skeleton-menu3.png[The Menu contentarea with links]
 
 And since this contentarea will also be present on all pages and a user might experience the menu as part of a site header, we can also include a clickable logo that will also result in a navigation toward the Home-page.
 
 .The final Menu Contentarea
-image::./version1-skeleton-menu4.png[The final Menu contentarea]
+image::./part1-skeleton-menu4.png[The final Menu contentarea]
 
 As with the text label elements the image element also requires documentation.
 
@@ -320,19 +326,19 @@ However because in this particular case (its a tutorial were the author knows wh
 We start with the Welcome & Impression part, which we could model as a text label of which its container contains two images in order to express the grouping of this information.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop1.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop1.png[The Shop-Information contentarea]
 
 To emphasize that the welcome text also needs a header we add an additional text label within the 'Welcome text' text label.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop2.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop2.png[The Shop-Information contentarea]
 
 And since we can see in the sitemap that this contentarea should contain links toward the Liquorice information page and the Assortment page, which would make no sense at the Opening hours and / or Location part of this contentarea we add those links as well.
 
 WARNING: But now we have a problem that we must deterministic determine from where those links are triggered. We therefore can not assign both links to a single content area element (CAE).
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop3.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop3.png[The Shop-Information contentarea]
 
 However because the 'Welcome header' and the images are within the text label of the welcome text, they will inherit the link provided by the Welcome text element if not overwritten as it is the case with the Inside Impression image element.
 Again this isn't wat we wanted because a user might get confused that when he accidentally click on the welcome header get forwarded toward the Liquorice Information page.
@@ -340,12 +346,12 @@ Again this isn't wat we wanted because a user might get confused that when he ac
 To solve this we add additional text labels within the Welcome text that hold the links.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop4.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop4.png[The Shop-Information contentarea]
 
 We can finish the page by adding the elements for the Opening hours and Location information.
 
 .The Shop-Information Contentarea
-image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
+image::./part1-skeleton-shop5.png[The Shop-Information contentarea]
 
 NOTE: As with the Sitemap Diagram, the layout doesn't matter. A future extension with regard to the layout may address this, but currently the layout is an aspect we don't model with U__ia__ML. The grouping however gives some visual layout guidelines, which for instance would be a layout violation if we would place the Outside Impression Image as part of the Location Information.
 
@@ -396,7 +402,7 @@ A story combined with some images about the liquorice plant and the history of s
 Given the previous two contentareas the Liquorice-Information contentarea holds no new rocket science. And therefore the result is quickly derived.
 
 .The Liquorice-Information Contentarea
-image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
+image::./part1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
 
 .text label documentation
 [%autowidth, cols="2*a", options=header]
@@ -423,7 +429,7 @@ The Assortment contentarea should provide a static overview of some of the sweat
 We could approach the design of this contentarea as we did with the other contentareas by defining a couple of images and text labels to fill this area, resulting in a CAD that might look like this one.
 
 .The Assortment Contentarea
-image::./version1-skeleton-assortment1.png[The Assortment contentarea]
+image::./part1-skeleton-assortment1.png[The Assortment contentarea]
 
 What we can see in this CAD is that we have drawn three sweets, because the number of sweets that should be shown on this part of the page hasn't been determined yet, a number we have to are quickly on with the product owner, because as we stated in the beginning, this version of the site will be that of a static site.
 So imagine that we agree on 25 sweets, we could replicate 25 of the sweet-name text labels including the elements it contains and add them to the CAD. The result would be a dull model.
@@ -432,7 +438,7 @@ But what we can see is that we have a repartition, a list of elements.
 This is something U__ia__ML can model as well.
 
 .The Assortment Contentarea
-image::./version1-skeleton-assortment2.png[The Assortment contentarea]
+image::./part1-skeleton-assortment2.png[The Assortment contentarea]
 
 The first part of this contentarea is nothing new, only to text labels.
 
@@ -510,211 +516,3 @@ The lower layers have determined a lot of choices, which reduces the choices a d
 image::x7VC7.jpg[]
 
 The surface layer however is not a part that is covered by U__ia__ML, and which will conclude this tutorial of the first version of the Drop Shop.
-
-== Appendix - Deliverables
-Since this is a tutorial that contains many images and tables you might wonder what remains if you would write a design document.
-In this chapter only the parts from this tutorial that would go into such a design document are extracted.
-
-=== Strategy Layer
-
-==== Business Case
-The site to be build should provide some basic information for customers so that visitors of the site know what the shop is about, where to find it and when the shop is open for business. The shop owner also wants to distinguish himself from other sweets shop by showing that this shop really knows it's products.
-
-==== Personas
-
-* **Ilse**: A child of 11 years old who really likes all kinds of sweets especially when they are colorful.
-* **Jaap**: A business man who often travels and always wants to have some 'drop' with him. He always is interested in new kinds of 'drop' and the story behind it.
-
-=== Scope Layer
-
-==== User Stories
-
-. As a customer I want to know where the shop is located and how it looks in order to determine if I want to travel to it.
-. As a customer I want to know when the shop is open
-. As a customer I want to see what kinds of sweets the shop provides.
-. As the business owner I want to distinguish the shop from other sweets sellers by showing that the shop really is specialized in sweets and can provide information normally not available at other stores.
-
-==== UML Use Cases
-there are no UML Use Cases
-
-=== The Structure layer
-
-.The U__ia__ML Sitemap
-image::./version1-structure4.png[The U__ia__ML sitemap]
-
-.Contentarea documentation with ux-decision extension
-[%autowidth, cols="3*a", options=header]
-|===
-| Contentarea ID | Description | ux-extension
-
-| Menu | A navigational menu to access all pages of the site  | 
-[%autowidth, cols=3]
-!===
-! Ilse
-! priority 4
-! The menu doesn't contain the content that she wants to see on the site, but it is a contentarea she expect to be part of the site.
-
-! Jaap
-! priority 4 
-! The menu doesn't contain the content that he wants to see on the site, but it is a contentarea he expect to be part of the site.
-!===
-
-| Shop-Information | Information about the location of the shop, some inside- and outside images of the store to give an impression of the store and a information about the opening hours.
-This contentarea therefore fulfills the requirements of the first and second user story. | 
-[%autowidth, cols=3]
-!===
-! Ilse
-! priority 8
-! She knows the store very well, therefore the location is known to her, but often forgets the opening hours of the store.
-
-! Jaap
-! priority 9 
-! Based on the impressions of the store he determines whether to buy his sweets at the nearest supermarket or at this specialized store. This information about the location and opening hours is very important to him because he travels often by car and has to determine the route to the shop and if he will make it in time after work before the shop closes. 
-!===
-| Liquorice-Information | A story combined with some images about the liquorice plant and the history of sweets in general. 
-This content area will be be the realization of the forth user story. |
-[%autowidth, cols=3]
-!===
-! Ilse
-! priority 1 
-! For her this information is boring, only the image of the liquorice plant might get her attention.
-
-! Jaap
-! priority 5 
-! For him this information is nice to know and might be useful in a conversation with foreigners who aren't familiar with this dutch treat. It also gives him some insurance that the store knows its sweets.
-!===
-| Assortment | A static overview of some sweets sold at the store (the third user story). |
-[%autowidth, cols=3]
-!===
-! Ilse
-! priority 8
-! She likes to look at the sweats, especially when they are colorful. It gives her ideas of what to buy next.
-
-! Jaap
-! priority 6
-! It gives him a good impression of what the store has to offer, but he would prefer a more complete overview and online store.
-!===
-|===
-
-.page documentation
-[options=header]
-|===
-| Page ID | Startpage | LandingPage
-| Home-page | yes | no
-| Product-info-page | no | no
-| Assortment-page | no | no
-|===
-
-=== The Skeleton Layer
-
-==== Menu contentarea
-
-.The Menu Contentarea
-image::./version1-skeleton-menu4.png[The final Menu contentarea]
-
-.image documentation with content specification extension
-[%autowidth, cols="4*a", options=header]
-|===
-| Image ID | Intended content | type | URI
-| Logo | A company logo that by clicking will navigate the user to the home page. | static | "D:\images\DropShopLogo.png"
-|===
-
-.text label documentation
-[%autowidth, cols="3*a", options=header]
-|===
-| Text label | Intended content | type
-| Home | Text label to indicate that by activating this label the user will be navigated to the home page. | static
-| Liquorice Information | Text label to indicate that by activating this label the user will navigate to the Liquorice Information page. | static
-| Assortment | Text label to indicate that by activating this label the user will navigate to the Assortment page. | static
-|===
-
-.text label documentation, content specification
-[%autowidth, options="header"]
-|===
-| Text label | Language | Content
-| Home | NL | "Home"
-| Liquorice Information | NL | "Meer over drop"
-| Assortment | NL | "Ons assortiment"
-|===
-
-==== Shop-Inforamtion Contentarea
-
-.The Shop-Information Contentarea
-image::./version1-skeleton-shop5.png[The Shop-Information contentarea]
-
-.image documentation
-[%autowidth, cols="2*a", options=header]
-|===
-| Image ID | Intended content 
-| Outside Impression | An image that shows the shop from the outside, so that visitors can easily recognize the shop.
-| Inside Impression | An image of the inside of the shop to give the impression that it's a nice clean shop, where the stocks are filled and their is plenty of sweets to choose from.
-| Street Map | A simple street map that has a marker that shows the location of the shop.
-|===
-
-.text label documentation
-[%autowidth, cols="3*a", options=header]
-|===
-| Text label | Intended content | type
-| Welcome header | A welcome slogan 
-| Welcome text | A very short text about the shop that explains what this site is about, what the user can find here and why the user should shop here and not somewhere else.
-| Liquorice information | part of the welcome text element that links to the Liquorice-Information-page.
-| Assortment | part of the welcome text element that links to the Assortment-page.
-| Opening hours | A table with the opening hours of the shop.
-| Location information | The address of the shop as well as information about the nearest public transport stop and about parking.
-|===
-
-==== Liquorice-Information Contentarea
-
-.The Liquorice-Information Contentarea
-image::./version1-skeleton-liquorice1.png[The Liquorice-Information contentarea]
-
-.text label documentation
-[%autowidth, cols="2*a", options=header]
-|===
-| Text label | Intended content 
-| Liquorice story header | A short header of the liquorice story
-| Liquorice story | A story about liquorice, which should contain a little bit about the history of sweets, the liquorice plant itself, the production of sweets and the current state of sweets in general.
-|===
-
-.image documentation
-[%autowidth, cols="2*a", options=header]
-|===
-| Image ID | Intended content 
-| Liquorice plant | An image that combines a drawing and photo of the liquorice plant.
-| Sweets production | A photo of the sweets production, preferable in a kitchen setting to show the handmade products that this shop also offers.
-| Sweets | The handmade final product.
-|===
-
-==== Assortment Contentarea
-
-.The Assortment Contentarea
-image::./version1-skeleton-assortment2.png[The Assortment contentarea]
-
-.List documentation
-[%autowidth, cols="4*a", options=header]
-|===
-| List ID | Sort Element | Sort Order | Recursion
-| Sweet | Name | Alphabetically - Ascending | no
-|===
-
-.text label documentation
-[%autowidth, cols="2*a", options=header]
-|===
-| Text label | Intended content 
-| Assortment header | A short header that express what this contentarea is about.
-| Assortment intro | a short introduction to this contentarea, so that the visitors know that this is area shows only a selection of the products and that you have to come to the store to buy them.
-| sweet[n].name | Name of the sweet
-| sweet[n].description | A short description of the sweet
-| sweet[n].price | the price of the sweet incl vat.
-|===
-
-.image documentation
-[%autowidth, cols="2*a", options=header]
-|===
-| Image ID | Intended content 
-| sweet[n].product | a photo of the sweet.
-|===
-
-=== The Surface Layer
-
-This would be the final product, which is out of scope for this tutorial
